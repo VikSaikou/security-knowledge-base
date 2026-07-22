@@ -1,12 +1,9 @@
-site_name: Security Systems Portfolio
+site_name: Security Knowledge Base
+site_description: Practical cybersecurity documentation, control models, evidence, and reusable tools.
+site_url: https://viksaikou.github.io/security-knowledge-base/
 
 theme:
   name: material
   features:
-    - navigation.tabs
-    - navigation.sections
-    - navigation.top
-    - search.suggest
-    - search.highlight
-
+   
 
