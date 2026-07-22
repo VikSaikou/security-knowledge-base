@@ -1,0 +1,12 @@
+site_name: Security Systems Portfolio
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+
+
