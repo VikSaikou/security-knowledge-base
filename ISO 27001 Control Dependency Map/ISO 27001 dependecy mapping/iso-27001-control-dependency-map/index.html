@@ -1,0 +1,2184 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Practical cybersecurity documentation, control models, evidence, and reusable tools.">
+      
+      
+      
+        <link rel="canonical" href="https://viksaikou.github.io/security-knowledge-base/ISO%2027001%20Control%20Dependency%20Map/ISO%2027001%20dependecy%20mapping/iso-27001-control-dependency-map/">
+      
+      
+        <link rel="prev" href="../../">
+      
+      
+        <link rel="next" href="../../../Reusable%20Tools-Templates/evidence-register/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>ISO 27001 Control Dependency Map - Security Knowledge Base</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#iso-27001-control-dependency-map" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Security Knowledge Base" class="md-header__button md-logo" aria-label="Security Knowledge Base" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Security Knowledge Base
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              ISO 27001 Control Dependency Map
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Security Knowledge Base" class="md-nav__button md-logo" aria-label="Security Knowledge Base" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Security Knowledge Base
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Welcome to MkDocs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AustraKey Lab
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    AustraKey Lab
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Access Management
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Access Management
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../AustraKey%20Lab/Access%20Management/workflow-001-access-request-approval/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Workflow 001 — Access Request Approval
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Getting Started
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../AustraKey%20Lab/Getting%20Started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Index
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ISO 27001 Control Dependency Map
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    ISO 27001 Control Dependency Map
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Index
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ISO 27001 dependecy mapping
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    ISO 27001 dependecy mapping
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ISO 27001 Control Dependency Map
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ISO 27001 Control Dependency Map
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#project-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Project overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-this-matters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why this matters
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#project-scope" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Project scope
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conceptual-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conceptual model
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Conceptual model">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#general-dependency-graph" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        General dependency graph
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dependency-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dependency types
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#and-and-or-relationships" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AND and OR relationships
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AND and OR relationships">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#and-relationship" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AND relationship
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#or-relationship" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        OR relationship
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dependency-impact" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dependency impact
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#control-effectiveness-and-evidence" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Control effectiveness and evidence
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fair-cam-mapping" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FAIR-CAM mapping
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#foundation-controls-and-centrality" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Foundation controls and centrality
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scale-sensitivity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scale sensitivity
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#source-of-truth-data-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Source-of-truth data model
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Source-of-truth data model">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#controls-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Controls table
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dependencies-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dependencies table
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#evidence-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Evidence table
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visualisation-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Visualisation options
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mvp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MVP
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="MVP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mvp-success-criteria" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MVP success criteria
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#limitations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Limitations
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#planned-outputs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Planned outputs
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#project-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Project status
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reusable Tools Templates
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Reusable Tools Templates
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Reusable%20Tools-Templates/evidence-register/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Evidence register
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Reusable%20Tools-Templates/risk-register/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Risk register
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#project-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Project overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-this-matters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why this matters
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#project-scope" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Project scope
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conceptual-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conceptual model
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Conceptual model">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#general-dependency-graph" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        General dependency graph
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dependency-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dependency types
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#and-and-or-relationships" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AND and OR relationships
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AND and OR relationships">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#and-relationship" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AND relationship
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#or-relationship" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        OR relationship
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dependency-impact" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dependency impact
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#control-effectiveness-and-evidence" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Control effectiveness and evidence
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fair-cam-mapping" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FAIR-CAM mapping
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#foundation-controls-and-centrality" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Foundation controls and centrality
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scale-sensitivity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scale sensitivity
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#source-of-truth-data-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Source-of-truth data model
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Source-of-truth data model">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#controls-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Controls table
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dependencies-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dependencies table
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#evidence-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Evidence table
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visualisation-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Visualisation options
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mvp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MVP
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="MVP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mvp-success-criteria" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MVP success criteria
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#limitations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Limitations
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#planned-outputs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Planned outputs
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#project-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Project status
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="iso-27001-control-dependency-map">ISO 27001 Control Dependency Map</h1>
+<h2 id="project-overview">Project overview</h2>
+<p>ISO/IEC 27001 is often presented as a list of requirements and controls. In practice, the controls do not work as isolated items. They form an interconnected system.</p>
+<p>An asset inventory supports vulnerability management. Vulnerability management depends on change and configuration management. Logging provides visibility, but logging alone does not create detection. Monitoring, analysis, responsibilities, and incident processes must also work.</p>
+<p>This project aims to make those relationships visible.</p>
+<p>The main question is:</p>
+<blockquote>
+<p>If one control becomes ineffective, which other controls lose part of their ability to work?</p>
+</blockquote>
+<p>The project will produce:</p>
+<ul>
+<li>a structured control dependency dataset;</li>
+<li>an interactive network graph;</li>
+<li>evidence requirements for each control;</li>
+<li>dependency strength and confidence ratings;</li>
+<li>a centrality score showing which controls support the largest part of the system.</li>
+</ul>
+<p>The intended users are CISOs, security managers, consultants, auditors, and implementation teams.</p>
+<hr />
+<h2 id="why-this-matters">Why this matters</h2>
+<p>A flat checklist can show whether a control has been documented or implemented. It does not clearly show:</p>
+<ul>
+<li>which controls are prerequisites for others;</li>
+<li>which controls provide data to other controls;</li>
+<li>which controls depend on the same evidence;</li>
+<li>which failures create downstream degradation;</li>
+<li>which controls should be implemented or improved first;</li>
+<li>which controls work only as part of a larger control set.</li>
+</ul>
+<p>This can lead to checkbox compliance. A control may appear complete while the surrounding system needed to make it effective is missing.</p>
+<p>For example:</p>
+<ul>
+<li>an asset inventory may exist but may not be complete or regularly verified;</li>
+<li>vulnerability scanning may run but may not cover unknown assets;</li>
+<li>logs may be collected but not reviewed;</li>
+<li>backups may exist but recovery procedures may not be tested;</li>
+<li>access reviews may occur without reliable ownership or system criticality data.</li>
+</ul>
+<p>The dependency map is intended to show these gaps as system weaknesses rather than isolated findings.</p>
+<hr />
+<h2 id="project-scope">Project scope</h2>
+<p>The final model will include:</p>
+<ol>
+<li>ISO/IEC 27001 clauses 4–10;</li>
+<li>ISO/IEC 27001:2022 Annex A controls;</li>
+<li>relationships between controls;</li>
+<li>AND and OR control logic;</li>
+<li>control evidence;</li>
+<li>FAIR-CAM functional mappings;</li>
+<li>control centrality and downstream degradation;</li>
+<li>scale sensitivity.</li>
+</ol>
+<p>The project will be developed gradually:</p>
+<table>
+<thead>
+<tr>
+<th>Stage</th>
+<th>Scope</th>
+<th>Main result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MVP</td>
+<td>A small set of foundational controls and their dependencies</td>
+<td>Validated data model and first interactive graph</td>
+</tr>
+<tr>
+<td>Version 1</td>
+<td>Major dependency clusters across clauses 4–10 and Annex A</td>
+<td>Usable management-level dependency map</td>
+</tr>
+<tr>
+<td>Version 2</td>
+<td>All controls, evidence requirements, AND/OR groups, and centrality</td>
+<td>Full control dependency system</td>
+</tr>
+<tr>
+<td>Version 3</td>
+<td>Filters, simulations, organisation profiles, and exports</td>
+<td>Practical decision-support tool</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="conceptual-model">Conceptual model</h2>
+<p>The project treats ISO 27001 as a directed, typed multigraph.</p>
+<ul>
+<li><strong>Nodes</strong> represent ISO 27001 clauses or Annex A controls.</li>
+<li><strong>Edges</strong> represent dependencies.</li>
+<li>A pair of controls may have more than one relationship.</li>
+<li>Relationships may be one-way or two-way.</li>
+<li>A control may support several FAIR-CAM functions.</li>
+<li>Multiple controls may form an AND or OR group.</li>
+<li>A control may be effective only when supporting controls also operate effectively.</li>
+</ul>
+<h3 id="general-dependency-graph">General dependency graph</h3>
+<pre><code class="language-mermaid">flowchart LR
+    G[Governance and scope] --&gt; R[Roles and responsibilities]
+    R --&gt; A[Asset inventory]
+    A --&gt; V[Vulnerability management]
+    V --&gt; C[Change management]
+    C &lt;--&gt; B[Configuration management]
+    A --&gt; L[Logging coverage]
+    B --&gt; L
+    L --&gt; M[Monitoring activities]
+    M --&gt; E[Event assessment]
+    E --&gt; I[Incident management]
+
+    P[Policies and documented information] --&gt; R
+    P --&gt; C
+    T[Threat intelligence] --&gt; V
+    T --&gt; M
+    Q[Performance evaluation] --&gt; A
+    Q --&gt; V
+    Q --&gt; M
+    I --&gt; Q
+</code></pre>
+<p>This diagram is illustrative. The final graph will be generated from the source dataset rather than maintained manually.</p>
+<hr />
+<h2 id="dependency-types">Dependency types</h2>
+<p>Each relationship will use one or more defined dependency types.</p>
+<table>
+<thead>
+<tr>
+<th>Dependency type</th>
+<th>Meaning</th>
+<th>Simple example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Prerequisite</td>
+<td>The target control cannot be implemented reliably without the source control</td>
+<td>Defined roles support ownership of the asset inventory</td>
+</tr>
+<tr>
+<td>Data dependency</td>
+<td>The source control provides data needed by the target control</td>
+<td>Asset inventory provides the scope for vulnerability scanning</td>
+</tr>
+<tr>
+<td>Operational dependency</td>
+<td>The target control depends on the source control during normal operation</td>
+<td>Monitoring depends on reliable logging</td>
+</tr>
+<tr>
+<td>Evidence dependency</td>
+<td>Evidence from the source control is used to assess the target control</td>
+<td>Change records support configuration management verification</td>
+</tr>
+<tr>
+<td>Governance dependency</td>
+<td>The source control defines authority, ownership, objectives, or rules</td>
+<td>Roles and responsibilities support access approval</td>
+</tr>
+<tr>
+<td>Risk dependency</td>
+<td>Two or more controls contribute to reducing the same category of risk</td>
+<td>Network filtering and authentication both reduce unauthorised access risk</td>
+</tr>
+</tbody>
+</table>
+<p>Dependencies can be bidirectional.</p>
+<p>For example:</p>
+<ul>
+<li>vulnerability management creates changes;</li>
+<li>change management controls how vulnerability remediation is deployed;</li>
+<li>change outcomes may reveal new configuration weaknesses;</li>
+<li>configuration management provides the baseline needed to evaluate later changes.</li>
+</ul>
+<p>Each direction must therefore be recorded separately.</p>
+<hr />
+<h2 id="and-and-or-relationships">AND and OR relationships</h2>
+<p>Some control outcomes depend on several controls working together.</p>
+<h3 id="and-relationship">AND relationship</h3>
+<p>All required controls must operate effectively.</p>
+<pre><code class="language-mermaid">flowchart LR
+    L[Logging] --&gt; D{Detection capability}
+    M[Monitoring] --&gt; D
+    R[Recognition and analysis] --&gt; D
+</code></pre>
+<p>Logging without monitoring does not provide reliable detection. Monitoring without sufficient visibility also fails. Detection is therefore often an AND relationship.</p>
+<h3 id="or-relationship">OR relationship</h3>
+<p>Different controls may provide alternative or compensating ways to support an objective.</p>
+<pre><code class="language-mermaid">flowchart LR
+    F[Filtering] --&gt; P{Reduced probability of compromise}
+    S[Segmentation] --&gt; P
+    A[Strong authentication] --&gt; P
+</code></pre>
+<p>An OR relationship does not mean that all controls are equally effective. It means that more than one control may contribute to the same objective or partially compensate for another control.</p>
+<hr />
+<h2 id="dependency-impact">Dependency impact</h2>
+<p>Each dependency will receive an impact score using anchor points.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Impact</th>
+<th>Interpretation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0%</td>
+<td>No meaningful dependency</td>
+</tr>
+<tr>
+<td style="text-align: right;">25%</td>
+<td>The target control still works, but with limited degradation</td>
+</tr>
+<tr>
+<td style="text-align: right;">50%</td>
+<td>The target control loses significant coverage or reliability</td>
+</tr>
+<tr>
+<td style="text-align: right;">75%</td>
+<td>The target control works only partially or inconsistently</td>
+</tr>
+<tr>
+<td style="text-align: right;">100%</td>
+<td>The target control outcome cannot be achieved without the source control</td>
+</tr>
+</tbody>
+</table>
+<p>The score represents the expected degradation of the target control when the source control is in a degraded state.</p>
+<p>It is not a direct calculation of total cyber risk reduction.</p>
+<p>Each score will also include a confidence rating:</p>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>High</td>
+<td>Strongly supported by the standard, implementation practice, or clear operational logic</td>
+</tr>
+<tr>
+<td>Medium</td>
+<td>Reasonable professional interpretation, but context may change the result</td>
+</tr>
+<tr>
+<td>Low</td>
+<td>Hypothesis that requires validation or organisation-specific evidence</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="control-effectiveness-and-evidence">Control effectiveness and evidence</h2>
+<p>The model distinguishes between three different questions:</p>
+<ol>
+<li>Is the control designed?</li>
+<li>Is the control operating?</li>
+<li>Is the control effective?</li>
+</ol>
+<p>A policy proves that expectations were documented. It does not prove that the control works.</p>
+<p>Example:</p>
+<table>
+<thead>
+<tr>
+<th>Evidence</th>
+<th style="text-align: right;">Design</th>
+<th style="text-align: right;">Operation</th>
+<th style="text-align: right;">Effectiveness</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Asset management policy</td>
+<td style="text-align: right;">Yes</td>
+<td style="text-align: right;">No</td>
+<td style="text-align: right;">No</td>
+</tr>
+<tr>
+<td>Approved asset register</td>
+<td style="text-align: right;">Yes</td>
+<td style="text-align: right;">Partial</td>
+<td style="text-align: right;">No</td>
+</tr>
+<tr>
+<td>Reconciliation between inventory and discovery results</td>
+<td style="text-align: right;">No</td>
+<td style="text-align: right;">Yes</td>
+<td style="text-align: right;">Yes</td>
+</tr>
+<tr>
+<td>Vulnerability scan coverage report</td>
+<td style="text-align: right;">Partial</td>
+<td style="text-align: right;">Yes</td>
+<td style="text-align: right;">Partial</td>
+</tr>
+<tr>
+<td>Remediation performance against defined time limits</td>
+<td style="text-align: right;">No</td>
+<td style="text-align: right;">Yes</td>
+<td style="text-align: right;">Yes</td>
+</tr>
+</tbody>
+</table>
+<p>The evidence catalogue will help prevent documentation from being treated as proof of operational effectiveness.</p>
+<hr />
+<h2 id="fair-cam-mapping">FAIR-CAM mapping</h2>
+<p>ISO controls will also be mapped to FAIR-CAM control functions.</p>
+<p>The map will use the following broad categories:</p>
+<table>
+<thead>
+<tr>
+<th>FAIR-CAM category</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Decision Support</td>
+<td>Provides information and structure for informed decisions</td>
+</tr>
+<tr>
+<td>Variance Management</td>
+<td>Prevents, identifies, prioritises, and corrects control degradation</td>
+</tr>
+<tr>
+<td>Loss Event Prevention</td>
+<td>Reduces the probability or frequency of loss events</td>
+</tr>
+<tr>
+<td>Loss Event Detection</td>
+<td>Provides visibility, monitoring, and recognition</td>
+</tr>
+<tr>
+<td>Loss Event Response</td>
+<td>Contains events, restores operations, and reduces loss</td>
+</tr>
+</tbody>
+</table>
+<p>One ISO control may support several FAIR-CAM functions.</p>
+<p>For example, an endpoint detection and response capability may support resistance, visibility, monitoring, recognition, and containment. The ISO control remains one node, but its functional mappings may be multiple.</p>
+<p>The dependency map is not intended to calculate financial risk. FAIR-CAM is used here as a functional lens for understanding what controls actually do.</p>
+<hr />
+<h2 id="foundation-controls-and-centrality">Foundation controls and centrality</h2>
+<p>A foundation control is defined as a control whose degradation causes the largest downstream degradation across other controls.</p>
+<p>This is different from saying that a control is important because it appears early in the standard.</p>
+<p>The project will consider several measures:</p>
+<table>
+<thead>
+<tr>
+<th>Measure</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Direct downstream dependencies</td>
+<td>Number of controls directly affected</td>
+</tr>
+<tr>
+<td>Total downstream reach</td>
+<td>Number of controls affected through the wider graph</td>
+</tr>
+<tr>
+<td>Weighted downstream impact</td>
+<td>Total effect after dependency impact scores are applied</td>
+</tr>
+<tr>
+<td>AND-group criticality</td>
+<td>Importance within control sets where all members are required</td>
+</tr>
+<tr>
+<td>Cross-domain reach</td>
+<td>Ability to support several control domains or FAIR-CAM functions</td>
+</tr>
+</tbody>
+</table>
+<p>Potential foundation controls to test include:</p>
+<ul>
+<li>information security roles and responsibilities;</li>
+<li>threat intelligence;</li>
+<li>inventory of information and associated assets;</li>
+<li>classification of information;</li>
+<li>identity management;</li>
+<li>incident management planning and preparation;</li>
+<li>ICT readiness for business continuity;</li>
+<li>management of technical vulnerabilities;</li>
+<li>configuration management;</li>
+<li>logging;</li>
+<li>monitoring activities;</li>
+<li>change management.</li>
+</ul>
+<p>These are starting hypotheses. Their actual importance should be determined by the graph.</p>
+<hr />
+<h2 id="scale-sensitivity">Scale sensitivity</h2>
+<p>Controls should not be labelled simply as “for large companies only”.</p>
+<p>A small organisation may still need a control because of its risks, technology, legal obligations, or customer requirements. The implementation method may be simpler, but the control objective may remain relevant.</p>
+<p>The project will therefore use scale-sensitivity labels.</p>
+<table>
+<thead>
+<tr>
+<th>Label</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Universal</td>
+<td>Usually relevant across most organisation sizes</td>
+</tr>
+<tr>
+<td>Scaling-sensitive</td>
+<td>Becomes harder to manage as the organisation grows</td>
+</tr>
+<tr>
+<td>Complex-environment</td>
+<td>Especially important in distributed, hybrid, or technically complex environments</td>
+</tr>
+<tr>
+<td>Regulated or high-risk</td>
+<td>More important where legal, contractual, safety, or high-impact requirements exist</td>
+</tr>
+</tbody>
+</table>
+<p>The graph can display these labels through borders, icons, filters, or separate views rather than relying only on colour.</p>
+<hr />
+<h2 id="source-of-truth-data-model">Source-of-truth data model</h2>
+<p>The visual graph will be generated from structured data.</p>
+<h3 id="controls-table">Controls table</h3>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Control ID</td>
+<td>Unique ISO clause or Annex A identifier</td>
+</tr>
+<tr>
+<td>Control name</td>
+<td>Official or shortened control name</td>
+</tr>
+<tr>
+<td>Source</td>
+<td>ISO clause or Annex A</td>
+</tr>
+<tr>
+<td>Control category</td>
+<td>Foundation, execution, oversight, recovery, or other defined category</td>
+</tr>
+<tr>
+<td>FAIR-CAM functions</td>
+<td>One or more functional mappings</td>
+</tr>
+<tr>
+<td>Scale sensitivity</td>
+<td>Organisation-size and complexity relevance</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>Plain-language explanation</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dependencies-table">Dependencies table</h3>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dependency ID</td>
+<td>Unique relationship identifier</td>
+</tr>
+<tr>
+<td>Source control</td>
+<td>Control providing the dependency</td>
+</tr>
+<tr>
+<td>Target control</td>
+<td>Control being affected</td>
+</tr>
+<tr>
+<td>Dependency type</td>
+<td>Prerequisite, data, operational, evidence, governance, or risk</td>
+</tr>
+<tr>
+<td>Logic</td>
+<td>Direct, AND group, or OR group</td>
+</tr>
+<tr>
+<td>Impact</td>
+<td>0%, 25%, 50%, 75%, or 100%</td>
+</tr>
+<tr>
+<td>Confidence</td>
+<td>High, medium, or low</td>
+</tr>
+<tr>
+<td>Rationale</td>
+<td>Plain-language reason for the relationship</td>
+</tr>
+<tr>
+<td>Failure effect</td>
+<td>What becomes less effective</td>
+</tr>
+<tr>
+<td>Interpretation type</td>
+<td>Standard-supported, professional interpretation, organisation-specific, or hypothesis</td>
+</tr>
+</tbody>
+</table>
+<h3 id="evidence-table">Evidence table</h3>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Evidence ID</td>
+<td>Unique evidence identifier</td>
+</tr>
+<tr>
+<td>Control ID</td>
+<td>Related control</td>
+</tr>
+<tr>
+<td>Evidence item</td>
+<td>Document, record, report, configuration, test, or observation</td>
+</tr>
+<tr>
+<td>Proves design</td>
+<td>Whether it supports control design</td>
+</tr>
+<tr>
+<td>Proves operation</td>
+<td>Whether it supports operating status</td>
+</tr>
+<tr>
+<td>Proves effectiveness</td>
+<td>Whether it supports actual effectiveness</td>
+</tr>
+<tr>
+<td>Owner</td>
+<td>Responsible role</td>
+</tr>
+<tr>
+<td>Review frequency</td>
+<td>Expected verification interval</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="visualisation-options">Visualisation options</h2>
+<p>The same source data may support several views.</p>
+<table>
+<thead>
+<tr>
+<th>View</th>
+<th>Best use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Interactive network graph</td>
+<td>Explore upstream and downstream dependencies</td>
+</tr>
+<tr>
+<td>Layered dependency graph</td>
+<td>Explain implementation order to management</td>
+</tr>
+<tr>
+<td>Dependency matrix</td>
+<td>Review all control-to-control relationships systematically</td>
+</tr>
+<tr>
+<td>Sankey diagram</td>
+<td>Show how several foundation controls support downstream capabilities</td>
+</tr>
+<tr>
+<td>Chord diagram</td>
+<td>Show dense relationships between control domains</td>
+</tr>
+<tr>
+<td>Heat map</td>
+<td>Compare dependency strength across clauses or Annex A groups</td>
+</tr>
+<tr>
+<td>Control card view</td>
+<td>Show one control, its evidence, dependencies, and failure effects</td>
+</tr>
+<tr>
+<td>Degradation simulation</td>
+<td>Select a control and highlight the affected part of the system</td>
+</tr>
+<tr>
+<td>Centrality ranking</td>
+<td>Identify the controls whose failure creates the widest impact</td>
+</tr>
+<tr>
+<td>Cluster view</td>
+<td>Group controls by function, domain, FAIR-CAM category, or implementation phase</td>
+</tr>
+</tbody>
+</table>
+<p>The interactive network graph is the likely main interface, but it should not be the only view. Dense graphs become difficult to interpret when all controls and relationships are displayed at once.</p>
+<hr />
+<h2 id="mvp">MVP</h2>
+<p>The MVP will test the method with a limited group of controls.</p>
+<p>The first cluster will focus on the dependency chain around:</p>
+<ul>
+<li>scope;</li>
+<li>roles and responsibilities;</li>
+<li>asset inventory;</li>
+<li>technical vulnerability management;</li>
+<li>change management;</li>
+<li>configuration management;</li>
+<li>logging;</li>
+<li>monitoring;</li>
+<li>performance evaluation;</li>
+<li>improvement.</li>
+</ul>
+<p>The MVP is not limited to one threat scenario. Dependencies are recorded as general control relationships.</p>
+<p>Risk scenarios may be added later as optional filters or validation cases. They are not the primary structure of the map.</p>
+<h3 id="mvp-success-criteria">MVP success criteria</h3>
+<p>The MVP is successful when it can:</p>
+<ul>
+<li>show upstream and downstream dependencies for a selected control;</li>
+<li>distinguish dependency types;</li>
+<li>represent AND and OR relationships;</li>
+<li>show impact and confidence;</li>
+<li>link controls to expected evidence;</li>
+<li>identify the most central controls;</li>
+<li>explain why a control is considered foundational;</li>
+<li>remain understandable to a CISO or management audience.</li>
+</ul>
+<hr />
+<h2 id="limitations">Limitations</h2>
+<p>This project does not claim that every dependency is universal.</p>
+<p>Control relationships may change according to:</p>
+<ul>
+<li>organisational structure;</li>
+<li>technology architecture;</li>
+<li>outsourcing;</li>
+<li>regulatory obligations;</li>
+<li>risk tolerance;</li>
+<li>available compensating controls;</li>
+<li>control maturity;</li>
+<li>implementation design.</li>
+</ul>
+<p>The map must therefore distinguish:</p>
+<ul>
+<li>relationships clearly supported by ISO requirements;</li>
+<li>professional interpretation;</li>
+<li>organisation-specific relationships;</li>
+<li>hypotheses requiring validation.</li>
+</ul>
+<p>The model is intended to support decisions, not replace professional judgement.</p>
+<hr />
+<h2 id="planned-outputs">Planned outputs</h2>
+<p>The repository is expected to contain:</p>
+<pre><code class="language-text">docs/
+├── index.md
+├── project-overview.md
+├── methodology.md
+├── dependency-types.md
+├── evidence-model.md
+├── visualisation.md
+└── limitations.md
+
+data/
+├── controls.csv
+├── dependencies.csv
+├── dependency-groups.csv
+└── evidence.csv
+
+src/
+├── validation/
+├── graph-builder/
+└── scoring/
+
+assets/
+└── diagrams/
+</code></pre>
+<p>Possible final outputs include:</p>
+<ul>
+<li>MkDocs documentation;</li>
+<li>CSV source data;</li>
+<li>an interactive graph;</li>
+<li>downloadable control cards;</li>
+<li>centrality reports;</li>
+<li>management summaries;</li>
+<li>filtered small-organisation and complex-environment views.</li>
+</ul>
+<hr />
+<h2 id="project-status">Project status</h2>
+<p>The current phase is methodology design.</p>
+<p>The next steps are:</p>
+<ol>
+<li>finalise the source-of-truth schema;</li>
+<li>define dependency scoring rules;</li>
+<li>select the MVP controls;</li>
+<li>create the first dependency records;</li>
+<li>review the relationships for consistency;</li>
+<li>generate the first interactive graph;</li>
+<li>test whether the result is understandable to a management audience.</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>
