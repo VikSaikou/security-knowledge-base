@@ -4,6 +4,41 @@ site_url: https://viksaikou.github.io/security-knowledge-base/
 
 theme:
   name: material
+  
   features:
-   
+    - navigation.tabs
 
+  palette:    
+    - scheme: default
+      primary: blue grey
+      accent: lime
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    
+    - scheme: slate
+      primary: blue grey
+      accent: lime
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode   
+
+nav:
+  - Home: index.md
+
+  - ISO 27001 Control Dependency Map:
+      - Overview: ISO 27001 Control Dependency Map/index.md
+      - Control Dependency Map: ISO 27001 Control Dependency Map/iso-27001-control-dependency-map.md
+
+  - AustraKey Lab:
+      - Overview: AustraKey Lab/index.md
+      - Access Management:
+          - Access Request Approval: AustraKey Lab/Access Management/workflow-001-access-request-approval.md
+      - Getting Started:
+          - Overview: AustraKey Lab/Getting Started/index.md
+
+  - Reusable Tools & Templates:
+      - Evidence Register: Reusable Tools-Templates/evidence-register.md
+      - Risk Register: Reusable Tools-Templates/risk-register.md
+
+  - About: about.md

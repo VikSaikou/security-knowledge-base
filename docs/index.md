@@ -1,21 +1,27 @@
-# Welcome to MkDocs
+# Security Knowledge Base
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+A structured collection of practical cybersecurity projects, control models,
+decision workflows, evidence registers, and reusable templates.
 
-## Commands
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+## Working principles
 
-## Project layout
+The content in this knowledge base follows four principles:
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+1. **Security should be explainable.**  
+   A control should be understandable to management, implementers, auditors, and control owners.
 
-# AustraKey Knowledge Base
+2. **Security should be reviewable.**  
+   Decisions, approvals, exceptions, and verification evidence should be visible.
 
-Welcome to the AustraKey internal knowledge base.
+3. **Security should reflect real operations.**  
+   Documentation should describe how work is actually performed, not only how a standard expects it to work.
+
+4. **Security should be reusable.**  
+   A useful model should support more than one project, organisation, or assessment.
+
+## Project status
+
+This knowledge base is under active development. Individual pages may represent completed artefacts, working drafts, design concepts, or planned extensions.
+
+The documentation is intended to show the reasoning behind security systems as well as the final artefacts.
