@@ -1,9 +1,5 @@
 # ISO 27001 Control Dependency Map
 
-description: A model showing dependencies between selected ISO 27001 controls.
----
-## Overview
-
 This project models how selected ISO 27001 controls depend on and reinforce one another.
 
 The current model contains:
@@ -55,6 +51,12 @@ flowchart LR
     B --> C["A.5.15 Access Control"]
     C --> D["A.5.18 Access Rights"]
     D --> E["A.8.15 Logging"]
+
+<img
+  src="../assets/diagrams/control-dependency-chain.svg"
+  alt="ISO 27001 control dependency chain"
+  style="width: 100%; height: auto;"
+>
 
 The diagram presents only selected anchor relationships.
 The dependency register remains the authoritative detailed view.
