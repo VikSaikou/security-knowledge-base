@@ -16,6 +16,8 @@ The map is intended to help answer:
 - Which dependencies are strongly supported?
 - Where is additional validation required?
 
+[Download the complete dependency register](https://github.com/VikSaikou/security-knowledge-base/blob/c9884dfd3947a13174b90b3910ccc8c86537b18d/docs/assets/data/iso-27001-control-dependencies.xlsx)
+
 ## How to read the model
 
 | Field | Meaning |
