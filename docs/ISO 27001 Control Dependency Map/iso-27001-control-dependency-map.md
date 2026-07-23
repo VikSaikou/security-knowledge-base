@@ -29,19 +29,11 @@ The map is intended to help answer:
 
 ## Controls
 
-{{ read_excel(
-    'assets/data/iso27001-control-dependencies.xlsx',
-    sheet_name='Controls',
-    engine='openpyxl'
-) }}
+{{ excel_table("assets/data/iso27001-control-dependencies.xlsx", "Controls") }}
 
 ## Control dependencies
 
-{{ read_excel(
-    'assets/data/iso27001-control-dependencies.xlsx',
-    sheet_name='Dependencies',
-    engine='openpyxl'
-) }}
+{{ excel_table("assets/data/iso27001-control-dependencies.xlsx", "Dependencies") }}
 
 ## Simplified dependency view
 
