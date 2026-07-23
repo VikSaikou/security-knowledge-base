@@ -1643,7 +1643,7 @@
 <li>A control may be effective only when supporting controls also operate effectively.</li>
 </ul>
 <h3 id="general-dependency-graph">General dependency graph</h3>
-<pre><code class="language-mermaid">flowchart LR
+<pre class="mermaid"><code>flowchart LR
     G[Governance and scope] --&gt; R[Roles and responsibilities]
     R --&gt; A[Asset inventory]
     A --&gt; V[Vulnerability management]
@@ -1662,8 +1662,7 @@
     Q[Performance evaluation] --&gt; A
     Q --&gt; V
     Q --&gt; M
-    I --&gt; Q
-</code></pre>
+    I --&gt; Q</code></pre>
 <p>This diagram is illustrative. The final graph will be generated from the source dataset rather than maintained manually.</p>
 <hr />
 <h2 id="dependency-types">Dependency types</h2>
@@ -1723,19 +1722,17 @@
 <p>Some control outcomes depend on several controls working together.</p>
 <h3 id="and-relationship">AND relationship</h3>
 <p>All required controls must operate effectively.</p>
-<pre><code class="language-mermaid">flowchart LR
+<pre class="mermaid"><code>flowchart LR
     L[Logging] --&gt; D{Detection capability}
     M[Monitoring] --&gt; D
-    R[Recognition and analysis] --&gt; D
-</code></pre>
+    R[Recognition and analysis] --&gt; D</code></pre>
 <p>Logging without monitoring does not provide reliable detection. Monitoring without sufficient visibility also fails. Detection is therefore often an AND relationship.</p>
 <h3 id="or-relationship">OR relationship</h3>
 <p>Different controls may provide alternative or compensating ways to support an objective.</p>
-<pre><code class="language-mermaid">flowchart LR
+<pre class="mermaid"><code>flowchart LR
     F[Filtering] --&gt; P{Reduced probability of compromise}
     S[Segmentation] --&gt; P
-    A[Strong authentication] --&gt; P
-</code></pre>
+    A[Strong authentication] --&gt; P</code></pre>
 <p>An OR relationship does not mean that all controls are equally effective. It means that more than one control may contribute to the same objective or partially compensate for another control.</p>
 <hr />
 <h2 id="dependency-impact">Dependency impact</h2>
@@ -2213,7 +2210,7 @@
 <hr />
 <h2 id="planned-outputs">Planned outputs</h2>
 <p>The repository is expected to contain:</p>
-<pre><code class="language-text">docs/
+<div class="highlight"><pre><span></span><code>docs/
 ├── index.md
 ├── project-overview.md
 ├── methodology.md
@@ -2235,7 +2232,7 @@ src/
 
 assets/
 └── diagrams/
-</code></pre>
+</code></pre></div>
 <p>Possible final outputs include:</p>
 <ul>
 <li>MkDocs documentation;</li>

@@ -464,6 +464,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Control Dependency Map
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -480,6 +498,91 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#description-a-model-showing-dependencies-between-selected-iso-27001-controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        description: A model showing dependencies between selected ISO 27001 controls.
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-read-the-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to read the model
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Controls
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#control-dependencies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Control dependencies
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#simplified-dependency-view" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Simplified dependency view
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -910,6 +1013,80 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#description-a-model-showing-dependencies-between-selected-iso-27001-controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        description: A model showing dependencies between selected ISO 27001 controls.
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-read-the-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to read the model
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Controls
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#control-dependencies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Control dependencies
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#simplified-dependency-view" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Simplified dependency view
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -926,6 +1103,89 @@
 
 
 <h1 id="iso-27001-control-dependency-map">ISO 27001 Control Dependency Map</h1>
+<h2 id="description-a-model-showing-dependencies-between-selected-iso-27001-controls">description: A model showing dependencies between selected ISO 27001 controls.</h2>
+<h2 id="overview">Overview</h2>
+<p>This project models how selected ISO 27001 controls depend on and reinforce one another.</p>
+<p>The current model contains:
+- <strong>17 controls</strong>
+- <strong>48 control dependencies</strong>
+- dependency strength ratings
+- confidence ratings
+- expected degraded states
+- dependency rationales</p>
+<p>The map is intended to help answer:
+- What stops working when a control is ineffective?
+- Which controls jointly reduce a specific risk?
+- Which dependencies are strongly supported?
+- Where is additional validation required?</p>
+<h2 id="how-to-read-the-model">How to read the model</h2>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Source control</td>
+<td>The control that depends on another control</td>
+</tr>
+<tr>
+<td>Target control</td>
+<td>The supporting or required control</td>
+</tr>
+<tr>
+<td>Dependency strength</td>
+<td>Estimated importance of the dependency</td>
+</tr>
+<tr>
+<td>Confidence</td>
+<td>Confidence in the assigned dependency</td>
+</tr>
+<tr>
+<td>Degraded state</td>
+<td>What becomes weaker or unreliable</td>
+</tr>
+<tr>
+<td>Rationale</td>
+<td>Why the dependency exists</td>
+</tr>
+</tbody>
+</table>
+<h2 id="controls">Controls</h2>
+<p>{{ read_excel(
+    'assets/data/iso27001-control-dependencies.xlsx',
+    sheet_name='Controls',
+    engine='openpyxl'
+) }}</p>
+<h2 id="control-dependencies">Control dependencies</h2>
+<p>{{ read_excel(
+    'assets/data/iso27001-control-dependencies.xlsx',
+    sheet_name='Dependencies',
+    engine='openpyxl'
+) }}</p>
+<h2 id="simplified-dependency-view">Simplified dependency view</h2>
+<p>```mermaid
+flowchart LR
+    A["A.5.1 Policies"] --&gt; B["A.5.2 Roles"]
+    B --&gt; C["A.5.15 Access Control"]
+    C --&gt; D["A.5.18 Access Rights"]
+    D --&gt; E["A.8.15 Logging"]</p>
+<p>The diagram presents only selected anchor relationships.
+The dependency register remains the authoritative detailed view.</p>
+<p>Limitations</p>
+<p>This model represents general control dependencies rather than dependencies
+derived exclusively from one threat scenario or one organization.</p>
+<p>Dependency strength and confidence values are analytical assessments and
+should be validated against:</p>
+<ul>
+<li>organizational context;</li>
+<li>applicable risks;</li>
+<li>implemented processes;</li>
+<li>available evidence;</li>
+<li>control testing results.</li>
+</ul>
 
 
 
