@@ -53,12 +53,7 @@ flowchart LR
     D --> E["A.8.15 Logging"]
 ```
 
-
-<img
-  src="[https://github.com/VikSaikou/security-knowledge-base/blob/6ddedb7fea1709abd7c041ef25d9bac05b91a74b/docs/assets/pictures/control-dependency-chain.svg]"
-  alt="ISO 27001 control dependency chain"
-  style="width: 100%; height: auto;"
->
+src="[https://github.com/VikSaikou/security-knowledge-base/blob/6ddedb7fea1709abd7c041ef25d9bac05b91a74b/docs/assets/pictures/control-dependency-chain.svg]"
 
 The diagram presents only selected anchor relationships.
 The dependency register remains the authoritative detailed view.
