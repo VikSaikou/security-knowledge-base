@@ -4,7 +4,8 @@
 
 ISO/IEC 27001 is often presented as a list of requirements and controls. In practice, the controls do not work as isolated items. They form an interconnected system.
 
-An asset inventory supports vulnerability management. Vulnerability management depends on change and configuration management. Logging provides visibility, but logging alone does not create detection. Monitoring, analysis, responsibilities, and incident processes must also work.
+> [!IMPORTANT]
+> An asset inventory supports vulnerability management. --> Vulnerability management depends on change and configuration management. --> Logging provides visibility, --> but logging alone does not create detection. --> Monitoring, analysis, responsibilities, and incident processes must also work.
 
 This project aims to make those relationships visible.
 
