@@ -53,7 +53,7 @@ flowchart LR
     D --> E["A.8.15 Logging"]
 
 <img
-  src="../assets/diagrams/control-dependency-chain.svg"
+  src="../assets/pictures/control-dependency-chain.svg"
   alt="ISO 27001 control dependency chain"
   style="width: 100%; height: auto;"
 >
