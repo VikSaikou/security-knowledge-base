@@ -55,7 +55,7 @@ flowchart LR
 
 
 <img
-  src="assets/pictures/control-dependency-chain.svg"
+  src="[https://github.com/VikSaikou/security-knowledge-base/blob/6ddedb7fea1709abd7c041ef25d9bac05b91a74b/docs/assets/pictures/control-dependency-chain.svg]"
   alt="ISO 27001 control dependency chain"
   style="width: 100%; height: auto;"
 >
@@ -76,3 +76,5 @@ should be validated against:
 * implemented processes;
 * available evidence;
 * control testing results.
+
+[def]: ssets/pictures/control-dependency-chain.sv
