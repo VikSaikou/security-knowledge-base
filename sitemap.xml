@@ -2,34 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://viksaikou.github.io/security-knowledge-base/</loc>
-         <lastmod>2026-07-22</lastmod>
+         <lastmod>2026-07-23</lastmod>
     </url>
     <url>
          <loc>https://viksaikou.github.io/security-knowledge-base/about/</loc>
-         <lastmod>2026-07-22</lastmod>
+         <lastmod>2026-07-23</lastmod>
+    </url>
+    <url>
+         <loc>https://viksaikou.github.io/security-knowledge-base/AustraKey%20Lab/</loc>
+         <lastmod>2026-07-23</lastmod>
     </url>
     <url>
          <loc>https://viksaikou.github.io/security-knowledge-base/AustraKey%20Lab/Access%20Management/workflow-001-access-request-approval/</loc>
-         <lastmod>2026-07-22</lastmod>
+         <lastmod>2026-07-23</lastmod>
     </url>
     <url>
          <loc>https://viksaikou.github.io/security-knowledge-base/AustraKey%20Lab/Getting%20Started/</loc>
-         <lastmod>2026-07-22</lastmod>
+         <lastmod>2026-07-23</lastmod>
     </url>
     <url>
          <loc>https://viksaikou.github.io/security-knowledge-base/ISO%2027001%20Control%20Dependency%20Map/</loc>
-         <lastmod>2026-07-22</lastmod>
+         <lastmod>2026-07-23</lastmod>
     </url>
     <url>
-         <loc>https://viksaikou.github.io/security-knowledge-base/ISO%2027001%20Control%20Dependency%20Map/ISO%2027001%20dependecy%20mapping/iso-27001-control-dependency-map/</loc>
-         <lastmod>2026-07-22</lastmod>
+         <loc>https://viksaikou.github.io/security-knowledge-base/ISO%2027001%20Control%20Dependency%20Map/iso-27001-control-dependency-map/</loc>
+         <lastmod>2026-07-23</lastmod>
     </url>
     <url>
          <loc>https://viksaikou.github.io/security-knowledge-base/Reusable%20Tools-Templates/evidence-register/</loc>
-         <lastmod>2026-07-22</lastmod>
+         <lastmod>2026-07-23</lastmod>
     </url>
     <url>
          <loc>https://viksaikou.github.io/security-knowledge-base/Reusable%20Tools-Templates/risk-register/</loc>
-         <lastmod>2026-07-22</lastmod>
+         <lastmod>2026-07-23</lastmod>
     </url>
 </urlset>
