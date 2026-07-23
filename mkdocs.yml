@@ -10,9 +10,12 @@ theme:
   
   plugins:
   - search
-  - table-reader
-  - search
   - macros
+  - table-reader
+  
+
+  markdown_extensions:
+  - tables
 
   extra_css:
   - stylesheets/extra.css
