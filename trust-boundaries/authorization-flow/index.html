@@ -10,9 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://viksaikou.github.io/security-knowledge-base/Trust%20boundaries/trust-boundary-controls/">
+        <link rel="canonical" href="https://viksaikou.github.io/security-knowledge-base/trust-boundaries/authorization-flow/">
       
       
+        <link rel="prev" href="../authentication-flow/">
+      
+      
+        <link rel="next" href="../attack-paths/">
       
       
         
@@ -23,7 +27,7 @@
     
     
       
-        <title>Trust Boundary Controls - Security Knowledge Base</title>
+        <title>Authorization Flow - Security Knowledge Base</title>
       
     
     
@@ -74,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#trust-boundary-controls" class="md-skip">
+        <a href="#authorization-flow" class="md-skip">
           Skip to content
         </a>
       
@@ -108,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Trust Boundary Controls
+              Authorization Flow
             
           </span>
         </div>
@@ -244,11 +248,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../trust-boundaries/index.md" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
           
   
   
@@ -496,24 +502,29 @@
       
   
   
+    
   
   
+  
     
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   
@@ -531,7 +542,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -549,7 +560,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../trust-boundaries/index.md" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         
   
   
@@ -577,7 +588,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../trust-boundaries/business-architecture.md" class="md-nav__link">
+      <a href="../business-architecture/" class="md-nav__link">
         
   
   
@@ -605,7 +616,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../trust-boundaries/trust-zones.md" class="md-nav__link">
+      <a href="../trust-zones/" class="md-nav__link">
         
   
   
@@ -633,7 +644,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../trust-boundaries/trust-boundaries.md" class="md-nav__link">
+      <a href="../trust-boundaries/" class="md-nav__link">
         
   
   
@@ -661,7 +672,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../trust-boundaries/trust-boundary-controls.md" class="md-nav__link">
+      <a href="../trust-boundary-controls/" class="md-nav__link">
         
   
   
@@ -689,7 +700,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../trust-boundaries/data-flow.md" class="md-nav__link">
+      <a href="../data-flow/" class="md-nav__link">
         
   
   
@@ -717,7 +728,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../trust-boundaries/authentication-flow.md" class="md-nav__link">
+      <a href="../authentication-flow/" class="md-nav__link">
         
   
   
@@ -742,10 +753,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../trust-boundaries/authorization-flow.md" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Authorization Flow
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -761,6 +799,165 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#purpose" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Purpose
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#az-01-external-user-authorization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AZ-01 — External user authorization
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AZ-01 — External user authorization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#allowed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Allowed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restricted" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Restricted
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#az-02-internal-user-authorization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AZ-02 — Internal user authorization
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AZ-02 — Internal user authorization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#allowed_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Allowed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restricted_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Restricted
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#az-03-administrator-authorization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AZ-03 — Administrator authorization
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AZ-03 — Administrator authorization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#allowed_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Allowed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restricted_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Restricted
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#this-diagram-answers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        This diagram answers
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -773,7 +970,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../trust-boundaries/attack-paths.md" class="md-nav__link">
+      <a href="../attack-paths/" class="md-nav__link">
         
   
   
@@ -801,7 +998,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../trust-boundaries/trust-recovery-paths.md" class="md-nav__link">
+      <a href="../trust-recovery-paths/" class="md-nav__link">
         
   
   
@@ -829,7 +1026,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../trust-boundaries/trust-boundary-evidence.md" class="md-nav__link">
+      <a href="../trust-boundary-evidence/" class="md-nav__link">
         
   
   
@@ -857,7 +1054,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../trust-boundaries/trust-boundary-failure.md" class="md-nav__link">
+      <a href="../trust-boundary-failure/" class="md-nav__link">
         
   
   
@@ -1320,22 +1517,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#tb-01-internet-to-public-services" class="md-nav__link">
+  <a href="#az-01-external-user-authorization" class="md-nav__link">
     <span class="md-ellipsis">
       
-        TB-01 — Internet to Public Services
+        AZ-01 — External user authorization
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="TB-01 — Internet to Public Services">
+    <nav class="md-nav" aria-label="AZ-01 — External user authorization">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#preventive-controls" class="md-nav__link">
+  <a href="#allowed" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Preventive controls
+        Allowed
       
     </span>
   </a>
@@ -1343,21 +1540,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#detective-controls" class="md-nav__link">
+  <a href="#restricted" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Detective controls
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#protects-against" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Protects against
+        Restricted
       
     </span>
   </a>
@@ -1370,22 +1556,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#tb-02-public-services-to-sensitive-data" class="md-nav__link">
+  <a href="#az-02-internal-user-authorization" class="md-nav__link">
     <span class="md-ellipsis">
       
-        TB-02 — Public Services to Sensitive Data
+        AZ-02 — Internal user authorization
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="TB-02 — Public Services to Sensitive Data">
+    <nav class="md-nav" aria-label="AZ-02 — Internal user authorization">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#preventive-controls_1" class="md-nav__link">
+  <a href="#allowed_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Preventive controls
+        Allowed
       
     </span>
   </a>
@@ -1393,21 +1579,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#detective-controls_1" class="md-nav__link">
+  <a href="#restricted_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Detective controls
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#protects-against_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Protects against
+        Restricted
       
     </span>
   </a>
@@ -1420,22 +1595,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#tb-03-internal-network-to-public-services" class="md-nav__link">
+  <a href="#az-03-administrator-authorization" class="md-nav__link">
     <span class="md-ellipsis">
       
-        TB-03 — Internal Network to Public Services
+        AZ-03 — Administrator authorization
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="TB-03 — Internal Network to Public Services">
+    <nav class="md-nav" aria-label="AZ-03 — Administrator authorization">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#preventive-controls_2" class="md-nav__link">
+  <a href="#allowed_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Preventive controls
+        Allowed
       
     </span>
   </a>
@@ -1443,21 +1618,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#detective-controls_2" class="md-nav__link">
+  <a href="#restricted_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Detective controls
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#protects-against_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Protects against
+        Restricted
       
     </span>
   </a>
@@ -1497,69 +1661,56 @@
 
 
 
-<h1 id="trust-boundary-controls">Trust Boundary Controls</h1>
+<h1 id="authorization-flow">Authorization Flow</h1>
 <blockquote>
-<p><strong>Core question:</strong> Which security controls protect each trust boundary?</p>
+<p><strong>Core question:</strong> What is each authenticated user allowed to do?</p>
 </blockquote>
-<p><img alt="Trust Boundary Controls diagram" src="../assets/trust-boundary-controls.svg" /></p>
+<p><img alt="Authorization Flow diagram" src="assets/authorization-flow.svg" /></p>
 <h2 id="purpose">Purpose</h2>
-<p>This diagram links each trust boundary to the preventive and detective controls intended to reduce the risks associated with crossing that boundary.</p>
-<h2 id="tb-01-internet-to-public-services">TB-01 — Internet to Public Services</h2>
-<h3 id="preventive-controls">Preventive controls</h3>
+<p>This diagram shows the resources and actions available to each user type after successful authentication.</p>
+<p>Authorization determines what an authenticated identity is permitted to do.</p>
+<h2 id="az-01-external-user-authorization">AZ-01 — External user authorization</h2>
+<h3 id="allowed">Allowed</h3>
 <ul>
-<li>TLS</li>
-<li>Web Application Firewall</li>
-<li>Rate limiting</li>
+<li>Submit data</li>
+<li>View own data</li>
+<li>Update own application</li>
 </ul>
-<h3 id="detective-controls">Detective controls</h3>
+<h3 id="restricted">Restricted</h3>
 <ul>
-<li>WAF and web-server logging</li>
+<li>View other users’ data</li>
+<li>Perform administrative actions</li>
 </ul>
-<h3 id="protects-against">Protects against</h3>
+<h2 id="az-02-internal-user-authorization">AZ-02 — Internal user authorization</h2>
+<h3 id="allowed_1">Allowed</h3>
 <ul>
-<li>Eavesdropping</li>
-<li>Malicious traffic</li>
-<li>Denial-of-service activity</li>
+<li>View assigned cases</li>
+<li>Update case data</li>
+<li>Process applications</li>
 </ul>
-<h2 id="tb-02-public-services-to-sensitive-data">TB-02 — Public Services to Sensitive Data</h2>
-<h3 id="preventive-controls_1">Preventive controls</h3>
+<h3 id="restricted_1">Restricted</h3>
 <ul>
-<li>Role-based access control</li>
-<li>Parameterized queries</li>
-<li>Encryption</li>
-<li>Database firewall</li>
+<li>Access unassigned cases</li>
+<li>Perform system administration</li>
 </ul>
-<h3 id="detective-controls_1">Detective controls</h3>
+<h2 id="az-03-administrator-authorization">AZ-03 — Administrator authorization</h2>
+<h3 id="allowed_2">Allowed</h3>
 <ul>
-<li>Database audit logs</li>
+<li>Manage system configuration</li>
+<li>Manage access</li>
+<li>Review audit information</li>
 </ul>
-<h3 id="protects-against_1">Protects against</h3>
+<h3 id="restricted_2">Restricted</h3>
 <ul>
-<li>SQL injection</li>
-<li>Unauthorized database access</li>
-</ul>
-<h2 id="tb-03-internal-network-to-public-services">TB-03 — Internal Network to Public Services</h2>
-<h3 id="preventive-controls_2">Preventive controls</h3>
-<ul>
-<li>Multi-factor authentication</li>
-<li>Conditional Access</li>
-<li>Session validation</li>
-</ul>
-<h3 id="detective-controls_2">Detective controls</h3>
-<ul>
-<li>Authentication and privileged-access logging</li>
-</ul>
-<h3 id="protects-against_2">Protects against</h3>
-<ul>
-<li>Stolen credentials</li>
-<li>Session hijacking</li>
-<li>Unauthorized privileged access</li>
+<li>Access business data unless required for an approved task</li>
 </ul>
 <h2 id="this-diagram-answers">This diagram answers</h2>
 <ul>
-<li>Which security controls protect each trust boundary?</li>
-<li>Which risks does each control mitigate?</li>
-<li>Which controls are preventive, detective, or corrective?</li>
+<li>What is each authenticated user allowed to do?</li>
+<li>Which resources can each user access?</li>
+<li>Which actions are restricted?</li>
+<li>Where is privileged access required?</li>
+<li>Which trust boundaries are crossed during authorized access?</li>
 </ul>
 
 

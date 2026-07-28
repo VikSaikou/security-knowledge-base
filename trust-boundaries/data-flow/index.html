@@ -10,9 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://viksaikou.github.io/security-knowledge-base/Trust%20boundaries/trust-boundaries/">
+        <link rel="canonical" href="https://viksaikou.github.io/security-knowledge-base/trust-boundaries/data-flow/">
       
       
+        <link rel="prev" href="../trust-boundary-controls/">
+      
+      
+        <link rel="next" href="../authentication-flow/">
       
       
         
@@ -23,7 +27,7 @@
     
     
       
-        <title>Trust Boundaries - Security Knowledge Base</title>
+        <title>Data Flow - Security Knowledge Base</title>
       
     
     
@@ -74,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#trust-boundaries" class="md-skip">
+        <a href="#data-flow" class="md-skip">
           Skip to content
         </a>
       
@@ -108,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Trust Boundaries
+              Data Flow
             
           </span>
         </div>
@@ -244,11 +248,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../trust-boundaries/index.md" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
           
   
   
@@ -496,24 +502,29 @@
       
   
   
+    
   
   
+  
     
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   
@@ -531,7 +542,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -549,7 +560,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../trust-boundaries/index.md" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         
   
   
@@ -577,7 +588,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../trust-boundaries/business-architecture.md" class="md-nav__link">
+      <a href="../business-architecture/" class="md-nav__link">
         
   
   
@@ -605,7 +616,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../trust-boundaries/trust-zones.md" class="md-nav__link">
+      <a href="../trust-zones/" class="md-nav__link">
         
   
   
@@ -633,7 +644,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../trust-boundaries/trust-boundaries.md" class="md-nav__link">
+      <a href="../trust-boundaries/" class="md-nav__link">
         
   
   
@@ -661,7 +672,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../trust-boundaries/trust-boundary-controls.md" class="md-nav__link">
+      <a href="../trust-boundary-controls/" class="md-nav__link">
         
   
   
@@ -686,10 +697,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../trust-boundaries/data-flow.md" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Flow
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -705,6 +743,131 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#purpose" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Purpose
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-flows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data flows
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Data flows">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#df-01-citizen-submitted-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DF-01 — Citizen-submitted data
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#df-02-validated-business-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DF-02 — Validated business data
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#df-03-case-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DF-03 — Case data
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#df-04-administrative-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DF-04 — Administrative actions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#df-05-backup-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DF-05 — Backup data
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#df-06-audit-events" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DF-06 — Audit events
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#this-diagram-answers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        This diagram answers
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -717,7 +880,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../trust-boundaries/authentication-flow.md" class="md-nav__link">
+      <a href="../authentication-flow/" class="md-nav__link">
         
   
   
@@ -745,7 +908,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../trust-boundaries/authorization-flow.md" class="md-nav__link">
+      <a href="../authorization-flow/" class="md-nav__link">
         
   
   
@@ -773,7 +936,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../trust-boundaries/attack-paths.md" class="md-nav__link">
+      <a href="../attack-paths/" class="md-nav__link">
         
   
   
@@ -801,7 +964,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../trust-boundaries/trust-recovery-paths.md" class="md-nav__link">
+      <a href="../trust-recovery-paths/" class="md-nav__link">
         
   
   
@@ -829,7 +992,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../trust-boundaries/trust-boundary-evidence.md" class="md-nav__link">
+      <a href="../trust-boundary-evidence/" class="md-nav__link">
         
   
   
@@ -857,7 +1020,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../trust-boundaries/trust-boundary-failure.md" class="md-nav__link">
+      <a href="../trust-boundary-failure/" class="md-nav__link">
         
   
   
@@ -1320,22 +1483,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#boundaries" class="md-nav__link">
+  <a href="#data-flows" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Boundaries
+        Data flows
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Boundaries">
+    <nav class="md-nav" aria-label="Data flows">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#tb-01-internet-to-public-services" class="md-nav__link">
+  <a href="#df-01-citizen-submitted-data" class="md-nav__link">
     <span class="md-ellipsis">
       
-        TB-01 — Internet to Public Services
+        DF-01 — Citizen-submitted data
       
     </span>
   </a>
@@ -1343,10 +1506,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#tb-02-public-services-to-sensitive-data" class="md-nav__link">
+  <a href="#df-02-validated-business-data" class="md-nav__link">
     <span class="md-ellipsis">
       
-        TB-02 — Public Services to Sensitive Data
+        DF-02 — Validated business data
       
     </span>
   </a>
@@ -1354,10 +1517,43 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#tb-03-internal-network-to-public-services" class="md-nav__link">
+  <a href="#df-03-case-data" class="md-nav__link">
     <span class="md-ellipsis">
       
-        TB-03 — Internal Network to Public Services
+        DF-03 — Case data
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#df-04-administrative-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DF-04 — Administrative actions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#df-05-backup-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DF-05 — Backup data
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#df-06-audit-events" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DF-06 — Audit events
       
     </span>
   </a>
@@ -1397,26 +1593,61 @@
 
 
 
-<h1 id="trust-boundaries">Trust Boundaries</h1>
+<h1 id="data-flow">Data Flow</h1>
 <blockquote>
-<p><strong>Core question:</strong> Where does trust change?</p>
+<p><strong>Core question:</strong> How does information move through the system and across trust boundaries?</p>
 </blockquote>
-<p><img alt="Trust Boundaries diagram" src="../assets/trust-boundaries.svg" /></p>
+<p><img alt="Data Flow diagram" src="../assets/data-flow.svg" /></p>
 <h2 id="purpose">Purpose</h2>
-<p>This diagram identifies the points where interactions move between zones with different trust assumptions.</p>
-<h2 id="boundaries">Boundaries</h2>
-<h3 id="tb-01-internet-to-public-services">TB-01 — Internet to Public Services</h3>
-<p>Separates external, untrusted traffic from organization-controlled public services.</p>
-<h3 id="tb-02-public-services-to-sensitive-data">TB-02 — Public Services to Sensitive Data</h3>
-<p>Separates the public application layer from sensitive data storage.</p>
-<h3 id="tb-03-internal-network-to-public-services">TB-03 — Internal Network to Public Services</h3>
-<p>Separates internal employee and administrative access from public access paths.</p>
+<p>This diagram identifies the primary business, supporting business, and operational data flows within the public digital service.</p>
+<h2 id="data-flows">Data flows</h2>
+<h3 id="df-01-citizen-submitted-data">DF-01 — Citizen-submitted data</h3>
+<ul>
+<li><strong>Source:</strong> External user</li>
+<li><strong>Destination:</strong> Public information system</li>
+<li><strong>Boundary crossed:</strong> TB-01</li>
+<li><strong>Type:</strong> Primary business flow</li>
+</ul>
+<h3 id="df-02-validated-business-data">DF-02 — Validated business data</h3>
+<ul>
+<li><strong>Source:</strong> Public information system</li>
+<li><strong>Destination:</strong> Sensitive database</li>
+<li><strong>Boundary crossed:</strong> TB-02</li>
+<li><strong>Type:</strong> Primary business flow</li>
+</ul>
+<h3 id="df-03-case-data">DF-03 — Case data</h3>
+<ul>
+<li><strong>Source:</strong> Internal user</li>
+<li><strong>Destination:</strong> Public information system</li>
+<li><strong>Boundary crossed:</strong> TB-03</li>
+<li><strong>Type:</strong> Supporting business flow</li>
+</ul>
+<h3 id="df-04-administrative-actions">DF-04 — Administrative actions</h3>
+<ul>
+<li><strong>Source:</strong> Administrator</li>
+<li><strong>Destination:</strong> Public information system</li>
+<li><strong>Boundary crossed:</strong> TB-03</li>
+<li><strong>Type:</strong> Supporting business flow</li>
+</ul>
+<h3 id="df-05-backup-data">DF-05 — Backup data</h3>
+<ul>
+<li><strong>Source:</strong> Sensitive database</li>
+<li><strong>Destination:</strong> Backup storage</li>
+<li><strong>Type:</strong> Operational flow</li>
+</ul>
+<h3 id="df-06-audit-events">DF-06 — Audit events</h3>
+<ul>
+<li><strong>Source:</strong> Public information system</li>
+<li><strong>Destination:</strong> Audit journal</li>
+<li><strong>Type:</strong> Operational flow</li>
+</ul>
 <h2 id="this-diagram-answers">This diagram answers</h2>
 <ul>
-<li>Where does trust change?</li>
-<li>Which interactions cross each trust boundary?</li>
-<li>Which components communicate across different trust levels?</li>
-<li>Why does each trust boundary exist?</li>
+<li>What data moves through the system?</li>
+<li>Where does each data flow originate and terminate?</li>
+<li>Which trust boundaries does each data flow cross?</li>
+<li>Where is sensitive information processed or stored?</li>
+<li>Which flows create, modify, copy, or log data?</li>
 </ul>
 
 
