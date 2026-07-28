@@ -1,0 +1,102 @@
+flowchart LR
+  classDef clause fill:#dbe9ff,stroke:#2b5797,stroke-width:1px,color:#1a1a1a;
+  classDef annex fill:#eaeaea,stroke:#555555,stroke-width:1px,color:#1a1a1a;
+
+  subgraph GOV[Governance]
+    c5_1["5.1 InfoSec Policy"]:::annex
+    c5_2["5.2 Roles & Resp."]:::annex
+    risk["Cl.6.1 Risk Assess/Treat"]:::clause
+    c5_9["5.9 Asset Inventory"]:::annex
+    c5_10["5.10 Acceptable Use"]:::annex
+    c5_12["5.12 Classification"]:::annex
+    c5_36["5.36 Compliance Review"]:::annex
+    c5_7["5.7 Threat Intelligence"]:::annex
+  end
+
+  subgraph PREV[Prevent]
+    c5_15["5.15 Access Control"]:::annex
+    c8_5["8.5 Secure Auth"]:::annex
+    c8_2["8.2 Privileged Access"]:::annex
+    c5_19["5.19 Supplier Security"]:::annex
+    c6_3["6.3 Awareness Training"]:::annex
+    c8_8["8.8 Vuln Mgmt"]:::annex
+    c5_18["5.18 Access Lifecycle"]:::annex
+    c5_23["5.23 Cloud Security"]:::annex
+    c8_1["8.1 Endpoint Devices"]:::annex
+    c8_7["8.7 Malware Protection"]:::annex
+    c8_9["8.9 Config Management"]:::annex
+    c8_10["8.10 Info Deletion"]:::annex
+    c8_32["8.32 Change Management"]:::annex
+    c8_6["8.6 Capacity Mgmt"]:::annex
+  end
+
+  subgraph DET[Detect]
+    c8_15["8.15 Logging"]:::annex
+    c8_16["8.16 Monitoring"]:::annex
+    c5_25["5.25 Event Assessment"]:::annex
+  end
+
+  subgraph RESP[Respond]
+    c5_24["5.24 Incident Planning"]:::annex
+    c5_26["5.26 Incident Response"]:::annex
+    c5_27["5.27 Incident Learning"]:::annex
+  end
+
+  subgraph REC[Recover]
+    c8_13["8.13 Backup"]:::annex
+    c5_30["5.30 BC Readiness"]:::annex
+    c5_29["5.29 Disruption Security"]:::annex
+  end
+
+  c5_1 --> c5_2
+  c5_1 --> risk
+  c5_9 --> risk
+  c5_2 -.-> risk
+  risk --> c5_15
+  risk --> c5_19
+  risk --> c8_8
+  risk --> c5_30
+  c5_2 --> c5_24
+  c5_9 --> c8_8
+  c5_9 --> c8_15
+  c5_9 -.-> c5_30
+  c5_15 --> c8_5
+  c5_15 --> c8_2
+  c8_2 -.-> c8_16
+  c8_15 --> c8_16
+  c5_24 --> c5_26
+  c8_8 -.-> c5_26
+  c5_19 -.-> c8_8
+  c5_19 -.-> risk
+  c6_3 -.-> c5_26
+  c6_3 -.-> c5_15
+  c8_13 --> c5_30
+  c5_26 --> c5_30
+  c5_1 --> c5_10
+  c5_9 --> c5_12
+  c5_12 --> c8_10
+  c5_15 --> c5_18
+  c5_19 --> c5_23
+  c5_9 --> c8_1
+  c8_1 --> c8_7
+  c8_32 --> c8_9
+  c8_9 --> c8_8
+  c5_30 --> c5_29
+  c5_36 -.-> risk
+  c5_7 -.-> risk
+  c5_7 -.-> c8_8
+  c5_7 -.-> c8_16
+  c8_16 --> c5_25
+  c5_25 --> c5_26
+  c5_26 --> c5_27
+  c5_27 -.-> risk
+  c8_9 -.-> c8_6
+  c8_6 --> c5_30
+
+  subgraph LEGEND[Legend]
+    direction LR
+    lgClause["Clause/Process"]:::clause
+    lgAnnex["Annex A Control"]:::annex
+    lgClause -->|solid = ENABLES / RECOVERY_DEPENDENCY| lgAnnex
+    lgClause -.->|dotted = SUPPORTS / PROVIDES_EVIDENCE| lgAnnex
+  end
