@@ -52,6 +52,20 @@ nav:
       - Overview: ISO 27001 Control Dependency Map/index.md
       - Control Dependency Map: ISO 27001 Control Dependency Map/iso-27001-control-dependency-map.md
 
+  - Trust Boundaries:
+      - Overview: trust-boundaries/index.md
+      - Business Architecture: trust-boundaries/business-architecture.md
+      - Trust Zones: trust-boundaries/trust-zones.md
+      - Trust Boundaries: trust-boundaries/trust-boundaries.md
+      - Trust Boundary Controls: trust-boundaries/trust-boundary-controls.md
+      - Data Flow: trust-boundaries/data-flow.md
+      - Authentication Flow: trust-boundaries/authentication-flow.md
+      - Authorization Flow: trust-boundaries/authorization-flow.md
+      - Attack Paths: trust-boundaries/attack-paths.md
+      - Trust Recovery Paths: trust-boundaries/trust-recovery-paths.md
+      - Trust Boundary Evidence: trust-boundaries/trust-boundary-evidence.md
+      - Trust Boundary Failure: trust-boundaries/trust-boundary-failure.md
+
   - AustraKey Lab:
       - Overview: AustraKey Lab/index.md
       - Access Management:
