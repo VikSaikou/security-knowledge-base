@@ -620,17 +620,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#analysis-sequence" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Analysis sequence
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#scenario" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -642,10 +631,32 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#why-trust-boundaries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why trust boundaries?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#core-idea" class="md-nav__link">
     <span class="md-ellipsis">
       
         Core idea
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#project-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Project structure
       
     </span>
   </a>
@@ -1400,17 +1411,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#analysis-sequence" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Analysis sequence
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#scenario" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1422,10 +1422,32 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#why-trust-boundaries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why trust boundaries?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#core-idea" class="md-nav__link">
     <span class="md-ellipsis">
       
         Core idea
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#project-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Project structure
       
     </span>
   </a>
@@ -1450,9 +1472,53 @@
 
 
 <h1 id="trust-boundary-analysis">Trust Boundary Analysis</h1>
-<p>This project models a public digital service used by citizens and employees to process sensitive information.</p>
+<p>Security diagrams often show systems, users, databases, and network connections, but they do not always explain where security decisions actually need to be made.</p>
+<p>I chose to analyze this system through trust boundaries because a trust boundary marks the point where assumptions change. A request moves from an external user into an organization-controlled service. An employee session enters a public-facing application. A web application accesses sensitive data. At each of these points, the organization must decide what it trusts, what it verifies, what it records, and what happens if the boundary fails.</p>
+<p>This project uses one simplified public digital service to examine those decisions from several perspectives. Instead of creating unrelated diagrams, I keep the same system, trust zones, components, and boundary identifiers throughout the project. Each diagram adds a different layer of analysis.</p>
+<p>The purpose is not to produce a complete technical architecture. The purpose is to demonstrate a repeatable way of thinking:</p>
+<ul>
+<li>begin with the business service and the people who depend on it;</li>
+<li>identify where trust assumptions change;</li>
+<li>examine what data and identities cross each boundary;</li>
+<li>connect risks to security controls;</li>
+<li>identify evidence that demonstrates control effectiveness;</li>
+<li>explore attack paths and business consequences;</li>
+<li>show how trust can be restored after compromise.</li>
+</ul>
+<p>This approach helps translate security architecture into questions that can be discussed with technical teams, auditors, risk owners, and management.</p>
+<h2 id="scenario">Scenario</h2>
+<p>The organization provides a public digital service used by citizens and employees to process sensitive information.
+The service must remain available for daily use. A temporary outage may be technically tolerable, but it could disrupt a large number of citizens and create significant operational and reputational consequences.</p>
+<p>The service includes:
+- a public-facing web application;
+- internal and privileged users;
+- a sensitive database;
+- backup storage;
+- audit logging;
+- three consistently numbered trust boundaries.</p>
 <p>The same system is examined through multiple architectural and security perspectives. Each diagram adds one layer of analysis while preserving the same trust zones, trust boundaries, components, and identifiers.</p>
-<h2 id="analysis-sequence">Analysis sequence</h2>
+<h2 id="why-trust-boundaries">Why trust boundaries?</h2>
+<p>Trust boundaries provide a practical bridge between business risk and technical architecture.</p>
+<p>They help ask questions such as:
+- What changes when information crosses this boundary?
+- Which assumptions are no longer valid?
+- What must be authenticated, authorized, validated, encrypted, or logged?
+- Which controls reduce the risk at this specific point?
+- What evidence demonstrates that those controls remain effective?
+- What becomes exposed if the boundary fails?
+- How does the organization restore trust before returning the service to operation?</p>
+<h2 id="core-idea">Core idea</h2>
+<p>A trust boundary is a point where trust assumptions change.</p>
+<p>The diagrams examine:
+- where trust changes;
+- what crosses each boundary;
+- which controls protect it;
+- how it may be attacked;
+- how protection is verified;
+- what happens when it fails;
+- how trust is restored.</p>
+<h2 id="project-structure">Project structure</h2>
+<p>The diagrams follow a deliberate progression:</p>
 <ol>
 <li><a href="business-architecture/">Business Architecture</a></li>
 <li><a href="trust-zones/">Trust Zones</a></li>
@@ -1466,29 +1532,6 @@
 <li><a href="trust-boundary-evidence/">Trust Boundary Evidence</a></li>
 <li><a href="trust-boundary-failure/">Trust Boundary Failure</a></li>
 </ol>
-<h2 id="scenario">Scenario</h2>
-<p>The organization provides a public digital service used by citizens and employees to process sensitive information.</p>
-<p>The service includes:</p>
-<ul>
-<li>a public-facing web application;</li>
-<li>internal and privileged users;</li>
-<li>a sensitive database;</li>
-<li>backup storage;</li>
-<li>audit logging;</li>
-<li>three consistently numbered trust boundaries.</li>
-</ul>
-<h2 id="core-idea">Core idea</h2>
-<p>A trust boundary is a point where trust assumptions change.</p>
-<p>The diagrams examine:</p>
-<ul>
-<li>where trust changes;</li>
-<li>what crosses each boundary;</li>
-<li>which controls protect it;</li>
-<li>how it may be attacked;</li>
-<li>how protection is verified;</li>
-<li>what happens when it fails;</li>
-<li>how trust is restored.</li>
-</ul>
 
 
 
