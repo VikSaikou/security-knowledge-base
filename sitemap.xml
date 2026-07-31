@@ -2,70 +2,98 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://viksaikou.github.io/security-knowledge-base/</loc>
-         <lastmod>2026-07-28</lastmod>
+         <lastmod>2026-07-31</lastmod>
     </url>
     <url>
          <loc>https://viksaikou.github.io/security-knowledge-base/about/</loc>
-         <lastmod>2026-07-28</lastmod>
+         <lastmod>2026-07-31</lastmod>
+    </url>
+    <url>
+         <loc>https://viksaikou.github.io/security-knowledge-base/client-security-discovery-framework/</loc>
+         <lastmod>2026-07-31</lastmod>
+    </url>
+    <url>
+         <loc>https://viksaikou.github.io/security-knowledge-base/client-security-discovery-framework/discovery-notes-template/</loc>
+         <lastmod>2026-07-31</lastmod>
+    </url>
+    <url>
+         <loc>https://viksaikou.github.io/security-knowledge-base/client-security-discovery-framework/discovery-question-bank/</loc>
+         <lastmod>2026-07-31</lastmod>
+    </url>
+    <url>
+         <loc>https://viksaikou.github.io/security-knowledge-base/client-security-discovery-framework/example-austrakey-remote-access/</loc>
+         <lastmod>2026-07-31</lastmod>
+    </url>
+    <url>
+         <loc>https://viksaikou.github.io/security-knowledge-base/client-security-discovery-framework/requirements-register/</loc>
+         <lastmod>2026-07-31</lastmod>
+    </url>
+    <url>
+         <loc>https://viksaikou.github.io/security-knowledge-base/client-security-discovery-framework/risk-and-assumption-log/</loc>
+         <lastmod>2026-07-31</lastmod>
+    </url>
+    <url>
+         <loc>https://viksaikou.github.io/security-knowledge-base/client-security-discovery-framework/signal-classification/</loc>
+         <lastmod>2026-07-31</lastmod>
     </url>
     <url>
          <loc>https://viksaikou.github.io/security-knowledge-base/iso-27001-control-dependency-map/</loc>
-         <lastmod>2026-07-28</lastmod>
+         <lastmod>2026-07-31</lastmod>
     </url>
     <url>
          <loc>https://viksaikou.github.io/security-knowledge-base/iso-27001-control-dependency-map/dependency_table/</loc>
-         <lastmod>2026-07-28</lastmod>
+         <lastmod>2026-07-31</lastmod>
     </url>
     <url>
          <loc>https://viksaikou.github.io/security-knowledge-base/iso-27001-control-dependency-map/methodology/</loc>
-         <lastmod>2026-07-28</lastmod>
+         <lastmod>2026-07-31</lastmod>
     </url>
     <url>
          <loc>https://viksaikou.github.io/security-knowledge-base/trust-boundaries/</loc>
-         <lastmod>2026-07-28</lastmod>
+         <lastmod>2026-07-31</lastmod>
     </url>
     <url>
          <loc>https://viksaikou.github.io/security-knowledge-base/trust-boundaries/attack-paths/</loc>
-         <lastmod>2026-07-28</lastmod>
+         <lastmod>2026-07-31</lastmod>
     </url>
     <url>
          <loc>https://viksaikou.github.io/security-knowledge-base/trust-boundaries/authentication-flow/</loc>
-         <lastmod>2026-07-28</lastmod>
+         <lastmod>2026-07-31</lastmod>
     </url>
     <url>
          <loc>https://viksaikou.github.io/security-knowledge-base/trust-boundaries/authorization-flow/</loc>
-         <lastmod>2026-07-28</lastmod>
+         <lastmod>2026-07-31</lastmod>
     </url>
     <url>
          <loc>https://viksaikou.github.io/security-knowledge-base/trust-boundaries/business-architecture/</loc>
-         <lastmod>2026-07-28</lastmod>
+         <lastmod>2026-07-31</lastmod>
     </url>
     <url>
          <loc>https://viksaikou.github.io/security-knowledge-base/trust-boundaries/data-flow/</loc>
-         <lastmod>2026-07-28</lastmod>
+         <lastmod>2026-07-31</lastmod>
     </url>
     <url>
          <loc>https://viksaikou.github.io/security-knowledge-base/trust-boundaries/trust-boundaries/</loc>
-         <lastmod>2026-07-28</lastmod>
+         <lastmod>2026-07-31</lastmod>
     </url>
     <url>
          <loc>https://viksaikou.github.io/security-knowledge-base/trust-boundaries/trust-boundary-controls/</loc>
-         <lastmod>2026-07-28</lastmod>
+         <lastmod>2026-07-31</lastmod>
     </url>
     <url>
          <loc>https://viksaikou.github.io/security-knowledge-base/trust-boundaries/trust-boundary-evidence/</loc>
-         <lastmod>2026-07-28</lastmod>
+         <lastmod>2026-07-31</lastmod>
     </url>
     <url>
          <loc>https://viksaikou.github.io/security-knowledge-base/trust-boundaries/trust-boundary-failure/</loc>
-         <lastmod>2026-07-28</lastmod>
+         <lastmod>2026-07-31</lastmod>
     </url>
     <url>
          <loc>https://viksaikou.github.io/security-knowledge-base/trust-boundaries/trust-recovery-paths/</loc>
-         <lastmod>2026-07-28</lastmod>
+         <lastmod>2026-07-31</lastmod>
     </url>
     <url>
          <loc>https://viksaikou.github.io/security-knowledge-base/trust-boundaries/trust-zones/</loc>
-         <lastmod>2026-07-28</lastmod>
+         <lastmod>2026-07-31</lastmod>
     </url>
 </urlset>
