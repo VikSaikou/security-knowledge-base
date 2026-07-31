@@ -77,6 +77,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#client-security-discovery-framework" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -619,14 +624,14 @@
   
   
     <li class="md-nav__item">
-      <a href="signal-classification/" class="md-nav__link">
+      <a href="discovery-notes-template/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Signal Classification
+    Discovery Notes Template
   
 
     
@@ -647,14 +652,14 @@
   
   
     <li class="md-nav__item">
-      <a href="discovery-notes-template/" class="md-nav__link">
+      <a href="signal-classification/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Discovery Notes Template
+    Signal Classification
   
 
     
@@ -1207,6 +1212,93 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#purpose" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Purpose
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-use-this-framework" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to Use This Framework
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#discovery-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Discovery Process
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#framework-outputs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Framework Outputs
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-scenario" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example Scenario
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#project-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Project Status
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1223,9 +1315,93 @@
 
 
 
-  <h1>Overview</h1>
+<h1 id="client-security-discovery-framework">Client Security Discovery Framework</h1>
+<h2 id="overview">Overview</h2>
+<div class="grid cards" markdown>
 
+-   **From ambiguity to actionable requirements**
 
+---
+
+    A reusable framework for converting ambiguous cybersecurity client requests into validated requirements, risks, ownership decisions, and measurable implementation outcomes.
+
+</div>
+
+<p>Security projects often begin with an incomplete request:</p>
+<blockquote>
+<p>“We need a VPN.”
+“The auditor requires MFA.”
+“Remote access is no longer working well.”
+“We need a more secure solution.”</p>
+</blockquote>
+<p>These statements describe a visible symptom, but they do not always reveal the underlying business need, operational constraint, security risk, or expected outcome.</p>
+<p>The <strong>Client Security Discovery Framework</strong> is a reusable method for converting ambiguous client concerns into structured and verifiable information.</p>
+<p>It helps identify:</p>
+<ul>
+<li>the business reason behind the request;</li>
+<li>the current process and its weaknesses;</li>
+<li>technical, operational, and human constraints;</li>
+<li>security risks and unverified assumptions;</li>
+<li>ownership and decision-making responsibilities;</li>
+<li>measurable success and validation criteria.</li>
+</ul>
+<h2 id="purpose">Purpose</h2>
+<p>The purpose of this framework is not to recommend a product immediately.</p>
+<p>Its purpose is to ensure that a proposed security solution addresses the actual problem and can realistically be implemented, maintained, and accepted by the organisation.</p>
+<p>The framework supports conversations with business owners, IT teams, security specialists, system administrators, and other stakeholders.</p>
+<h2 id="how-to-use-this-framework">How to Use This Framework</h2>
+<p>The documents are arranged in the order a typical security discovery process would follow.</p>
+<p>The process begins with the <strong>Discovery Question Bank</strong>, which helps gather information from the client. The findings are recorded in the <strong>Discovery Notes Template</strong> and then reviewed using <strong>Signal Classification</strong> to separate facts, symptoms, assumptions, hidden needs, risks, and requirements.</p>
+<p>Confirmed needs are transferred to the <strong>Requirements Register</strong>, while uncertainty and potential negative outcomes are tracked in the <strong>Risk and Assumption Log</strong>.</p>
+<p>The <strong>AustraKey Remote Access Example</strong> demonstrates how all parts of the framework can be applied together to an ambiguous client request.</p>
+<h2 id="discovery-process">Discovery Process</h2>
+<p>The framework follows a structured workflow that converts an initial client request into validated requirements, risks, and expected outcomes.</p>
+<p><a href="assets/client_security_discovery_process.svg"
+   target="_blank"
+   rel="noopener noreferrer">
+  Open the full-size discovery process diagram in a new tab
+</a></p>
+<p><a href="assets/client_security_discovery_process.svg"
+   target="_blank"
+   rel="noopener noreferrer">
+  <img src="assets/client_security_discovery_process.svg"
+       alt="Client Security Discovery Framework process"
+       style="width: 100%; height: auto;">
+</a></p>
+<p>During discovery, client statements are classified as:</p>
+<ul>
+<li>explicit requirements;</li>
+<li>symptoms;</li>
+<li>hidden needs;</li>
+<li>assumptions;</li>
+<li>constraints;</li>
+<li>risks;</li>
+<li>workarounds;</li>
+<li>success criteria.</li>
+</ul>
+<p>This separation helps prevent assumptions from being treated as confirmed facts.</p>
+<h2 id="framework-outputs">Framework Outputs</h2>
+<p>A completed discovery process should produce at least four practical outputs:</p>
+<ol>
+<li>a summary of the client’s current situation;</li>
+<li>a list of validated requirements and constraints;</li>
+<li>a risk and assumption register;</li>
+<li>agreed implementation and validation criteria.</li>
+</ol>
+<p>These outputs create a traceable link between the original client concern and the final technical recommendation.</p>
+<h2 id="example-scenario">Example Scenario</h2>
+<p>The framework is demonstrated using <strong>AustraKey</strong>, a fictional 50-person fintech company preparing to improve secure remote access for employees working across several countries.</p>
+<p>The example will show how an initial request for a “better VPN” can be translated into broader requirements concerning identity, MFA, managed devices, access ownership, logging, support, and residual risk.</p>
+<h2 id="project-status">Project Status</h2>
+<p>This repository currently contains the initial version of the framework and its document structure.</p>
+<p>The content will be expanded with:</p>
+<ul>
+<li>a detailed discovery question bank;</li>
+<li>reusable discovery templates;</li>
+<li>a requirements register;</li>
+<li>a risk and assumption log;</li>
+<li>a completed AustraKey example.</li>
+</ul>
 
 
 
