@@ -65,6 +65,7 @@ The same system is examined through multiple architectural and security perspect
 Instead of analyzing security controls individually, every diagram starts with the same question: **where does trust change**? Each view answers a different question while describing the same system.
 
 Every diagram analyzes **the same public digital service**, but from a different perspective:
+
 1. [Business Architecture](business-architecture.md)
 2. [Trust Zones](trust-zones.md)
 3. [Trust Boundaries](trust-boundaries.md)

@@ -2,7 +2,7 @@
 
 > **Core question:** How is a user’s identity verified before crossing a trust boundary?
 
-![Authentication Flow diagram](assets/authentication-flow.svg)
+![Authentication Flow diagram](../trust-boundaries/assets/authentification-flow.svg)
 
 ## Purpose
 

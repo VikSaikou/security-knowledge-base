@@ -2,7 +2,7 @@
 
 > **Core question:** What is each authenticated user allowed to do?
 
-![Authorization Flow diagram](assets/authorization-flow.svg)
+![Authorization Flow diagram](../trust-boundaries/assets/authorisation-flow.svg)
 
 ## Purpose
 
