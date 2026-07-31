@@ -18,6 +18,11 @@ theme:
   
   markdown_extensions:
   - tables
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.superfences
   
 
   extra_css:
@@ -59,8 +64,8 @@ nav:
   - Client Security Discovery Framework:
       - Overview: client-security-discovery-framework/index.md
       - Discovery Question Bank: client-security-discovery-framework/discovery-question-bank.md
-      - Signal Classification: client-security-discovery-framework/signal-classification.md
       - Discovery Notes Template: client-security-discovery-framework/discovery-notes-template.md
+      - Signal Classification: client-security-discovery-framework/signal-classification.md
       - Requirements Register: client-security-discovery-framework/requirements-register.md
       - Risk and Assumption Log: client-security-discovery-framework/risk-and-assumption-log.md
       - AustraKey Remote Access Example: client-security-discovery-framework/example-austrakey-remote-access.md
