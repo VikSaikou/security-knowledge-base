@@ -53,6 +53,8 @@
       
     
     
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -941,17 +943,6 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#examples_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Examples
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#classification-questions" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1030,7 +1021,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#examples_3" class="md-nav__link">
+  <a href="#examples_2" class="md-nav__link">
     <span class="md-ellipsis">
       
         Examples
@@ -1117,17 +1108,6 @@
   
     <nav class="md-nav" aria-label="11. Decisions">
       <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#examples_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Examples
-      
-    </span>
-  </a>
-  
-</li>
         
           <li class="md-nav__item">
   <a href="#classification-question_8" class="md-nav__link">
@@ -2026,17 +2006,6 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#examples_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Examples
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#classification-questions" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2115,7 +2084,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#examples_3" class="md-nav__link">
+  <a href="#examples_2" class="md-nav__link">
     <span class="md-ellipsis">
       
         Examples
@@ -2202,17 +2171,6 @@
   
     <nav class="md-nav" aria-label="11. Decisions">
       <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#examples_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Examples
-      
-    </span>
-  </a>
-  
-</li>
         
           <li class="md-nav__item">
   <a href="#classification-question_8" class="md-nav__link">
@@ -2345,15 +2303,11 @@
 <h2 id="purpose">Purpose</h2>
 <p>The Signal Classification method helps convert unstructured client statements into information that can support security decisions.</p>
 <p>During discovery, clients may describe:</p>
-<ul>
-<li>what they want;</li>
-<li>what they observe;</li>
-<li>what they believe;</li>
-<li>what they fear;</li>
-<li>what they currently do;</li>
-<li>what limits the available options.</li>
-</ul>
-<p>These statements should not automatically be treated as confirmed requirements.</p>
+<div class="admonition success">
+<p class="admonition-title">Success</p>
+<p>what they want; * what they observe; * what they believe; * what they fear; * what they currently do; * what limits the available options.</p>
+</div>
+<p>These statements <strong><em>should not automatically</em></strong> be treated as confirmed requirements.</p>
 <p>Classification helps distinguish facts from interpretation and prevents technical decisions from being based on unsupported assumptions.</p>
 <hr />
 <h2 id="1-signal-types">1. Signal Types</h2>
@@ -2367,52 +2321,52 @@
 </thead>
 <tbody>
 <tr>
-<td>Fact</td>
+<td><strong>Fact</strong></td>
 <td>Information supported by evidence or confirmed by an authorised source</td>
 <td>Record and use as an input</td>
 </tr>
 <tr>
-<td>Explicit requirement</td>
+<td><strong>Explicit requirement</strong></td>
 <td>A capability or outcome directly requested by the client</td>
 <td>Validate, prioritise, and add to the Requirements Register</td>
 </tr>
 <tr>
-<td>Symptom</td>
+<td><strong>Symptom</strong></td>
 <td>An observable problem whose root cause is not yet confirmed</td>
 <td>Investigate further</td>
 </tr>
 <tr>
-<td>Hidden need</td>
+<td><strong>Hidden need</strong></td>
 <td>An underlying need inferred from several statements or behaviours</td>
 <td>Confirm with the client before converting into a requirement</td>
 </tr>
 <tr>
-<td>Assumption</td>
+<td><strong>Assumption</strong></td>
 <td>A belief that has not yet been sufficiently verified</td>
 <td>Add to the Assumption Log and define validation</td>
 </tr>
 <tr>
-<td>Constraint</td>
+<td><strong>Constraint</strong></td>
 <td>A limitation affecting the available solution options</td>
 <td>Record and assess its impact</td>
 </tr>
 <tr>
-<td>Risk</td>
+<td><strong>Risk</strong></td>
 <td>A possible event that may cause business harm</td>
 <td>Add to the Risk Register</td>
 </tr>
 <tr>
-<td>Workaround</td>
+<td><strong>Workaround</strong></td>
 <td>An informal method used when the normal process does not work</td>
 <td>Identify the cause and related risks</td>
 </tr>
 <tr>
-<td>Success criterion</td>
+<td><strong>Success criterion</strong></td>
 <td>A measurable condition used to determine whether the project succeeded</td>
 <td>Define validation and acceptance evidence</td>
 </tr>
 <tr>
-<td>Decision</td>
+<td><strong>Decision</strong></td>
 <td>An agreed direction, approval, rejection, or risk acceptance</td>
 <td>Record the decision maker and rationale</td>
 </tr>
@@ -2420,20 +2374,12 @@
 </table>
 <hr />
 <h2 id="2-facts">2. Facts</h2>
-<p>A fact should be supported by evidence or confirmed by a person authorised to provide the information.</p>
+<p>A fact should be <strong>supported by evidence</strong> or <strong>confirmed by a person authorised</strong> to provide the information.</p>
 <h3 id="example">Example</h3>
 <blockquote>
 <p>“The current remote-access platform supports 100 concurrent users.”</p>
 </blockquote>
-<p>This should be classified as a fact only after reviewing:</p>
-<ul>
-<li>vendor documentation;</li>
-<li>licence information;</li>
-<li>current configuration;</li>
-<li>capacity reports;</li>
-<li>confirmation from the system owner.</li>
-</ul>
-<p>Without evidence, it remains an assumption.</p>
+<p>Classify this as a <strong>fact</strong> only when supported by vendor documentation, licence data, current configuration, capacity reports, or system-owner confirmation. Otherwise, record it as an <strong>assumption</strong>.</p>
 <h3 id="classification-question">Classification question</h3>
 <blockquote>
 <p>What evidence confirms this statement?</p>
@@ -2445,14 +2391,8 @@
 <blockquote>
 <p>“All remote users must use MFA.”</p>
 </blockquote>
-<p>This is an explicit requirement, but additional clarification may still be required:</p>
-<ul>
-<li>Which users are included?</li>
-<li>Which authentication methods are acceptable?</li>
-<li>Are emergency accounts included?</li>
-<li>What happens when the MFA service is unavailable?</li>
-<li>Who approves exceptions?</li>
-</ul>
+<p>This is an <strong>explicit requirement</strong>, but it is not yet complete or testable. Clarify the <strong>user scope, accepted authentication methods, emergency-account treatment, service-unavailability process,</strong> and <strong>exception approval</strong>.</p>
+<p><strong>Classification check:</strong> Can the statement be converted into a measurable acceptance criterion?</p>
 <p>A direct request is not automatically complete or testable.</p>
 <h3 id="classification-question_1">Classification question</h3>
 <blockquote>
@@ -2463,24 +2403,16 @@
 <p>A symptom describes what the client observes, but not necessarily why it occurs.</p>
 <h3 id="examples">Examples</h3>
 <blockquote>
-<p>“The VPN is slow in the evenings.”</p>
-<p>“Users regularly lose access.”</p>
-<p>“The security team receives too many alerts.”</p>
+<p>“The VPN is slow in the evenings.”<br />
+“Users regularly lose access.”<br />
+“The security team receives too many alerts.”  </p>
 </blockquote>
-<p>Possible causes may include:</p>
-<ul>
-<li>insufficient capacity;</li>
-<li>network routing;</li>
-<li>configuration errors;</li>
-<li>expired accounts;</li>
-<li>unstable integrations;</li>
-<li>inappropriate alert thresholds;</li>
-<li>user training gaps.</li>
-</ul>
-<p>The consultant should not convert a symptom directly into a product recommendation.</p>
+<p>These are <strong>symptoms</strong>, not root causes.<br />
+Investigate capacity, routing, configuration, account lifecycle, integrations, alert thresholds, and user training before recommending a solution.
+The consultant should not convert a symptom directly into a product recommendation.</p>
 <h3 id="classification-question_2">Classification question</h3>
 <blockquote>
-<p>What evidence would help identify the root cause?</p>
+<p>What evidence would help identify the actual root cause?</p>
 </blockquote>
 <hr />
 <h2 id="5-hidden-needs">5. Hidden Needs</h2>
@@ -2511,41 +2443,26 @@
 <p>An assumption is something believed to be true but not yet sufficiently verified.</p>
 <h3 id="examples_1">Examples</h3>
 <blockquote>
-<p>“All employees use managed devices.”</p>
-<p>“The firewall supports the required integration.”</p>
-<p>“The internal team can maintain the proposed solution.”</p>
-<p>“Ninety days of logging is sufficient.”</p>
+<p>“All employees use managed devices.”<br />
+“The firewall supports the required integration.”<br />
+“The internal team can maintain the proposed solution.”<br />
+“Ninety days of logging is sufficient.”  </p>
 </blockquote>
-<p>Each important assumption should include:</p>
-<ul>
-<li>why it matters;</li>
-<li>validation method;</li>
-<li>owner;</li>
-<li>confidence;</li>
-<li>due date;</li>
-<li>status.</li>
-</ul>
+<p>Each important assumption should record <strong>business relevance</strong> (why it matters), <strong>validation method, owner, confidence level, due date,</strong> and <strong>status</strong>.</p>
 <h3 id="classification-question_4">Classification question</h3>
 <blockquote>
 <p>What would change if this statement proved incorrect?</p>
 </blockquote>
 <hr />
 <h2 id="7-constraints">7. Constraints</h2>
-<p>A constraint limits the available solution options.</p>
-<h3 id="examples_2">Examples</h3>
-<ul>
-<li>the solution must be implemented before an audit;</li>
-<li>existing hardware must remain in use;</li>
-<li>only approved vendors may be selected;</li>
-<li>downtime must not exceed one hour;</li>
-<li>the internal team has limited administration capacity;</li>
-<li>data must remain within a specified jurisdiction.</li>
-</ul>
-<p>Constraints may be real, negotiable, or only assumed.</p>
+<p>A <strong>constraint</strong> limits the available solution options and may be <strong><em>real/confirmed</em></strong>, <strong><em>negotiable</em></strong>, or <strong><em>assumed</em></strong>.</p>
+<p><strong>Typical constraints:</strong><br />
+audit deadline · existing hardware must remain in use · only approved vendors · maximum downtime · limited administration capacity · data residency within a specified jurisdiction</p>
+<p><strong>Classification check:</strong> Is the constraint fixed, negotiable, or only assumed?</p>
 <h3 id="classification-questions">Classification questions</h3>
 <blockquote>
-<p>Who imposed this limitation?</p>
-<p>Is it mandatory, preferred, or historical?</p>
+<p>Who imposed this limitation?
+Is it mandatory, preferred, or historical?</p>
 </blockquote>
 <hr />
 <h2 id="8-risks">8. Risks</h2>
@@ -2558,39 +2475,22 @@
 <blockquote>
 <p>Due to delays in the offboarding process, there is a possibility that former employees may retain access to internal systems, resulting in unauthorised access, data exposure, or audit findings.</p>
 </blockquote>
-<p>A risk should contain:</p>
-<ul>
-<li>cause;</li>
-<li>possible event;</li>
-<li>business impact;</li>
-<li>owner;</li>
-<li>treatment decision.</li>
-</ul>
+<p><strong><em>Each risk should document</em></strong> its cause, potential event, business impact, owner, and treatment decision.</p>
 <h3 id="classification-question_5">Classification question</h3>
 <blockquote>
 <p>What negative business outcome could result from this situation?</p>
 </blockquote>
 <hr />
 <h2 id="9-workarounds">9. Workarounds</h2>
-<p>A workaround is an informal method used when the official process is too slow, unclear, unavailable, or impractical.</p>
-<h3 id="examples_3">Examples</h3>
-<ul>
-<li>shared accounts;</li>
-<li>approvals through personal messages;</li>
-<li>spreadsheets used instead of the official system;</li>
-<li>employees sending files to personal email;</li>
-<li>administrators bypassing change approval during urgent incidents.</li>
-</ul>
-<p>Workarounds are valuable discovery signals.</p>
-<p>They may reveal:</p>
-<ul>
-<li>excessive process friction;</li>
-<li>unavailable tools;</li>
-<li>unclear responsibility;</li>
-<li>unrealistic policies;</li>
-<li>missing emergency procedures;</li>
-<li>insufficient training.</li>
-</ul>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>A workaround is an <strong>informal</strong> method used when the official process is <strong><em>too slow, unclear, unavailable</em></strong>, or <strong><em>impractical</em></strong>.</p>
+</div>
+<h3 id="examples_2">Examples</h3>
+<p><strong>Typical workarounds:</strong><br />
+shared accounts · approvals through personal messages · unofficial spreadsheets · files sent to personal email · emergency changes made without approval</p>
+<p>Workarounds are valuable discovery signals because they may reveal<br />
+<strong>process friction, unavailable tools, unclear ownership/responsibility, unrealistic policies, missing emergency procedures,</strong> or <strong>insufficient training</strong>.</p>
 <h3 id="classification-question_6">Classification question</h3>
 <blockquote>
 <p>What problem is this workaround helping people solve?</p>
@@ -2604,41 +2504,22 @@
 </blockquote>
 <h3 id="improved-criterion">Improved criterion</h3>
 <blockquote>
-<p>All remote administrative access requires MFA, is restricted to approved accounts, and generates centrally available authentication logs.</p>
+<p>All remote administrative access requires MFA, is restricted to approved accounts, and generates centrally available authentication logs.
+<br></p>
 </blockquote>
-<p>Success criteria should be:</p>
-<ul>
-<li>measurable;</li>
-<li>testable;</li>
-<li>linked to a requirement;</li>
-<li>approved by an appropriate stakeholder;</li>
-<li>supported by evidence.</li>
-</ul>
+<div class="admonition tip">
+<p class="admonition-title">Success criteria should be</p>
+<p>· measurable · testable · linked to a requirement · approved by an appropriate stakeholder · supported by evidence</p>
+</div>
 <h3 id="classification-question_7">Classification question</h3>
 <blockquote>
 <p>How will the client prove that the expected outcome has been achieved?</p>
 </blockquote>
 <hr />
 <h2 id="11-decisions">11. Decisions</h2>
-<p>A decision records an agreed project direction.</p>
-<h3 id="examples_4">Examples</h3>
-<ul>
-<li>approve a pilot;</li>
-<li>reject a proposed vendor;</li>
-<li>defer device-compliance enforcement;</li>
-<li>accept residual risk;</li>
-<li>require additional testing;</li>
-<li>exclude a system from the current scope.</li>
-</ul>
-<p>A decision record should include:</p>
-<ul>
-<li>decision;</li>
-<li>reason;</li>
-<li>decision maker;</li>
-<li>date;</li>
-<li>affected requirement or risk;</li>
-<li>conditions or follow-up actions.</li>
-</ul>
+<p>A <strong>decision</strong> records an agreed project direction.</p>
+<p><strong>Typical decisions:</strong> approve a pilot · reject a vendor · defer device-compliance enforcement · accept residual risk · require additional testing · exclude a system from scope</p>
+<p>Each decision record should capture the <strong>decision, reason, decision-maker, date, affected requirement or risk,</strong> and <strong>follow-up actions or conditions</strong>.</p>
 <h3 id="classification-question_8">Classification question</h3>
 <blockquote>
 <p>Who had the authority to make this decision?</p>

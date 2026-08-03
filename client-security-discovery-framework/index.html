@@ -53,6 +53,8 @@
       
     
     
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -1317,16 +1319,8 @@
 
 <h1 id="client-security-discovery-framework">Client Security Discovery Framework</h1>
 <h2 id="overview">Overview</h2>
-<div class="grid cards" markdown>
-
--   **From ambiguity to actionable requirements**
-
----
-
-    A reusable framework for converting ambiguous cybersecurity client requests into validated requirements, risks, ownership decisions, and measurable implementation outcomes.
-
-</div>
-
+<p><strong>From ambiguity to actionable requirements</strong></p>
+<p>A reusable framework for converting ambiguous cybersecurity client requests into validated requirements, risks, ownership decisions, and measurable implementation outcomes.</p>
 <p>Security projects often begin with an incomplete request:</p>
 <blockquote>
 <p>“We need a VPN.”
@@ -1345,6 +1339,18 @@
 <li>ownership and decision-making responsibilities;</li>
 <li>measurable success and validation criteria.</li>
 </ul>
+<p>The <strong>Client Security Discovery Framework</strong> converts ambiguous client concerns into structured and verifiable information.</p>
+<div class="admonition info">
+<p class="admonition-title">What the framework identifies</p>
+<p><div class="framework-items">
+  <span>Business rationale</span>
+  <span>Current process</span>
+  <span>Constraints</span>
+  <span>Risks &amp; assumptions</span>
+  <span>Ownership</span>
+  <span>Success criteria</span>
+</div></p>
+</div>
 <h2 id="purpose">Purpose</h2>
 <p>The purpose of this framework is not to recommend a product immediately.</p>
 <p>Its purpose is to ensure that a proposed security solution addresses the actual problem and can realistically be implemented, maintained, and accepted by the organisation.</p>
@@ -1368,40 +1374,44 @@
        alt="Client Security Discovery Framework process"
        style="width: 100%; height: auto;">
 </a></p>
-<p>During discovery, client statements are classified as:</p>
-<ul>
-<li>explicit requirements;</li>
-<li>symptoms;</li>
-<li>hidden needs;</li>
-<li>assumptions;</li>
-<li>constraints;</li>
-<li>risks;</li>
-<li>workarounds;</li>
-<li>success criteria.</li>
-</ul>
+<p>During discovery, client statements are classified as <strong>explicit requirements, symptoms, hidden needs, assumptions, constraints, risks, workarounds,</strong> and <strong>success criteria</strong>.</p>
 <p>This separation helps prevent assumptions from being treated as confirmed facts.</p>
 <h2 id="framework-outputs">Framework Outputs</h2>
 <p>A completed discovery process should produce at least four practical outputs:</p>
-<ol>
-<li>a summary of the client’s current situation;</li>
-<li>a list of validated requirements and constraints;</li>
-<li>a risk and assumption register;</li>
-<li>agreed implementation and validation criteria.</li>
-</ol>
+<table>
+<thead>
+<tr>
+<th>Output</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Current state summary</strong></td>
+<td>Describes the client’s current situation</td>
+</tr>
+<tr>
+<td><strong>Validated requirements &amp; constraints</strong></td>
+<td>Confirms what is needed and what limits apply</td>
+</tr>
+<tr>
+<td><strong>Risk &amp; assumptions register</strong></td>
+<td>Captures uncertainty, dependencies, and exposure</td>
+</tr>
+<tr>
+<td><strong>Implementation &amp; validation criteria</strong></td>
+<td>Defines how the solution will be implemented and verified</td>
+</tr>
+</tbody>
+</table>
 <p>These outputs create a traceable link between the original client concern and the final technical recommendation.</p>
 <h2 id="example-scenario">Example Scenario</h2>
 <p>The framework is demonstrated using <strong>AustraKey</strong>, a fictional 50-person fintech company preparing to improve secure remote access for employees working across several countries.</p>
 <p>The example will show how an initial request for a “better VPN” can be translated into broader requirements concerning identity, MFA, managed devices, access ownership, logging, support, and residual risk.</p>
 <h2 id="project-status">Project Status</h2>
 <p>This repository currently contains the initial version of the framework and its document structure.</p>
-<p>The content will be expanded with:</p>
-<ul>
-<li>a detailed discovery question bank;</li>
-<li>reusable discovery templates;</li>
-<li>a requirements register;</li>
-<li>a risk and assumption log;</li>
-<li>a completed AustraKey example.</li>
-</ul>
+<p>The content will be expanded with:
+a <strong>detailed discovery question bank</strong>; <strong>reusable discovery templates</strong>; a <strong>requirements register</strong>; a <strong>risk and assumption log</strong>; a <strong>completed AustraKey example</strong>.</p>
 
 
 

@@ -16,3 +16,38 @@
   white-space: nowrap;
   vertical-align: top;
 }
+
+.md-content .md-typeset h1 {
+  color: #2676a5 !important;
+  font-weight: 600;
+  padding-bottom: 0.35rem;
+  border-bottom: 2px solid #a9d7f0;
+}
+
+.md-content .md-typeset h2 {
+  color: #2676a5 !important;
+  font-weight: 600;
+  padding-left: 0.65rem;
+  border-left: 4px solid #78bce3;
+}
+
+.md-content .md-typeset h3 {
+  color: #3d718f !important;
+  font-weight: 600;
+}
+
+.framework-items {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.4rem 1.5rem;
+}
+
+.framework-items span {
+  font-weight: 600;
+}
+
+@media screen and (max-width: 700px) {
+  .framework-items {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
